@@ -76,7 +76,8 @@ interview method tool -> sources/interviews -> claims -> framework runs -> perso
 - Interviews are treated as first-class evidence inputs in this repository.
 - The team builds a methodological interview tool just before conducting interviews (`analysis/persona_db/03_framework_runs/interviews/interview_method_tool.md`), then runs gathering.
 - The interview tool is survey-based and cohort-specific (`INS-PUS-v1` and `INS-INSURER-v1`) with mixed response types (structured data + free text).
+- Instruments and responses may include product-development prompts (DO/SAY/WANT, empathy-map signals, and customer journey breakdown moments).
 - Interview records require respondent profile metadata (including age, region, and role).
 - When answers are generated from existing evidence rather than live respondents, they are explicitly labeled as synthetic interview answers.
-- Interview answer documents must follow the instrument question IDs and include traceability fields (`claim_refs`, `source_refs`).
+- Interview answer documents must follow the instrument question IDs; `source_refs` are required per answer and `claim_refs` are optional (used when mapping to existing or extracted claims).
 - Existing interview content is preserved; process updates only clarify ordering, traceability, and labeling.

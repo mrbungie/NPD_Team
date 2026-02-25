@@ -2,7 +2,12 @@
 
 This file captures additional context and data opportunities discovered by reviewing `https://deepwiki.com/giumar11/info_MIB`. It is intended to make the NPD investigation and downstream product decisions more complete and Italy/SSN-localized.
 
-Important: some legacy `persona_db` insurer artifacts were originally built with out-of-scope (non-Italy) evidence. This repository's scope is Italy/SSN; non-Italy-only evidence must be treated as out-of-scope and should not be used to justify Italy product decisions.
+Important: this repository's scope is Italy/SSN; non-Italy-only evidence must be treated as out-of-scope and should not be used to justify Italy product decisions.
+
+Current repo status (as of 2026-02-25):
+- Interviews were upgraded to be product-development-ready (DO/SAY/WANT, empathy-map prompts, customer journey breakdowns).
+- Interview evidence was instantiated as `SOURCE-*` records (`SOURCE-20260225-015` through `SOURCE-20260225-030`) pointing to applied response files under `analysis/persona_db/03_framework_runs/interviews/responses/`.
+- Interview-derived claims were extracted as `CLAIM-*` (`CLAIM-20260225-016` through `CLAIM-20260225-047`) and used to extend DO/SAY runs and complete personas.
 
 ---
 
@@ -56,12 +61,9 @@ Why this matters:
 ## 2) Gaps vs Current persona_db (What’s missing today)
 
 ### 2.1 Stakeholder model mismatch (Italy/SSN)
-Some insurer/payer framing does not transfer to Italy/SSN. For Italy-first work, the "purchaser / governance" cohort should be defined in SSN terms, for example:
-- Regional health authority / ASL decision-maker
-- National/Regional governance stakeholders (e.g., AGENAS; Ministry of Health implementers)
-- Public provider networks operating under SSN constraints (procurement and integration in a public context)
+Status: addressed in current repo.
 
-This is not a small tweak: procurement cadence, compliance assumptions (privacy, interoperability), and outcome measurement expectations differ.
+The `insurer` cohort is treated as Italy/SSN procurement and governance stakeholders (Regions/ASL and adjacent national governance constraints) and is grounded in Italy/EU anchors plus interview-derived procurement journey evidence.
 
 ### 2.2 More patient navigation realism
 Our `patient_unknown_symptom` evidence is strong on:
@@ -72,6 +74,8 @@ Our `patient_unknown_symptom` evidence is strong on:
 DeepWiki suggests we can deepen realism by adding system-specific navigation constraints:
 - waiting times and regional access capacity
 - condition-level complexity score (specialist count) and likely sequences
+
+Update: interview instruments and personas now capture DO/SAY/WANT, empathy-map signals, and journey breakdown moments; system-capacity constraints and complexity scoring are still pending evidence expansions.
 
 ---
 
@@ -105,41 +109,108 @@ Why:
 
 ---
 
-## 4) Recommended Additional Sources to Add (If We Expand persona_db)
+## 4) Actionable Italy/SSN Datasets (Short List)
 
-These are suggested for the next iteration (not yet integrated into claims/personas in this file):
+Based on recent verification (Feb 2026), these are the most actionable datasets for integrating SSN reality into the persona_db.
 
-### Italy/SSN system constraints
-- AGENAS PNE (outcomes) documentation
-- PNGLA (waiting time) datasets and methodology
-- LEA/NSG monitoring documentation
-- Ministry of Health SDO documentation for discharge and diagnosis coding
-- ISTAT EHIS methodology and key access/behavior questions
+### 4.1 Performance & Outcomes (PNE/LEA)
+- **AGENAS PNE (Piano Nazionale Esiti)**: [pne.agenas.it](https://pne.agenas.it/)
+  - *Data*: Hospital quality indicators, clinical outcomes, and performance benchmarks.
+- **Ministero della Salute - LEA/NSG**: [Il Nuovo Sistema di Garanzia (NSG)](https://www.salute.gov.it/new/it/tema/livelli-essenziali-di-assistenza/il-nuovo-sistema-di-garanzia-nsg)
+  - *Data*: Regional compliance with Essential Levels of Assistance (LEA).
 
-### Italy/EU digital health governance and interoperability
-- FSE 2.0 guidance (AgID) and implementation materials
-- Interoperability guidelines for public administrations (AgID)
-- Ecosistema Dati Sanitari (EDS) institutional materials and implementation updates
-- EU EHDS (European Health Data Space) regulation overview and obligations
-- Privacy authority (Garante) guidance relevant to health data processing and secondary use
+### 4.2 Accessibility & Capacity (PNLA/PNGLA)
+- **PNLA (Piattaforma Nazionale Liste di Attesa)**: dashboard and updates are published via institutional channels.
+  - Ministero della Salute (waitlists entry point + PNGLA context): https://www.salute.gov.it/new/it/tema/liste-di-attesa
+  - MoH announcement (PNLA on AGENAS transparency portal): https://www.salute.gov.it/new/it/news-e-media/notizie/online-la-piattaforma-nazionale-delle-liste-di-attesa-sul-portale-della
+  - PNLA dashboard (Portale della Trasparenza - PNLA): https://www.portaletrasparenzaservizisanitari.it/piattaforma-nazionale-delle-liste-di-attesa/
+  - AGENAS transparency portal (project hub): https://www.agenas.gov.it/agenzia-per-la-sanit%C3%A0-digitale/progetti-strategici/portale-della-trasparenza
+  - AGENAS update (cruscotto + videoguide): https://www.agenas.gov.it/aree-tematiche/comunicazione/primo-piano/2661-disponibile-sul-portale-della-trasparenza-agenas-un-aggiornamento-dei-dati-del-cruscotto-della-piattaforma-nazionale-delle-liste-di-attesa-e-una-videoguida
 
-### Rare disease navigation and centers
-- Orphanet: rare disease prevalence classes and reference center metadata
-- UNIAMO: patient federation materials that reflect navigation pain points (if accessible with clear methodology)
+### 4.3 Patient & Disease Context (ISTAT/SDO/Orphanet)
+- **ISTAT EHIS (European Health Interview Survey)**: [Indagine europea sulla salute - EHIS 2025](https://www.istat.it/informazioni-sulla-rilevazione/indagine-europea-sulla-salute-ehis/)
+  - *Data*: Self-reported health status, healthcare utilization, and health determinants.
+- **Ministero della Salute - SDO (Scheda Dimissione Ospedaliera)**: https://www.salute.gov.it/new/it/tema/assistenza-ospedaliera-sdo/
+  - *Data*: Comprehensive hospital activity (diagnoses, procedures, DRGs).
+- **Orphanet**: [orpha.net](https://www.orpha.net/)
+  - *Data*: Rare disease taxonomy, prevalence classes, and reference center mapping. Useful for "specialist complexity" proxies.
+
+### 4.4 DeepWiki Pages and Useful Query Pack
+
+Verified DeepWiki entry points for `giumar11/info_MIB` (index date shown by DeepWiki: 2026-02-14):
+- Overview: https://deepwiki.com/giumar11/info_MIB/1-overview
+- Sources catalog system: https://deepwiki.com/giumar11/info_MIB/2.1-sources-catalog-system
+- Governance/performance data: https://deepwiki.com/giumar11/info_MIB/3.1-governance-and-performance-data
+- Proxy indicator methodology: https://deepwiki.com/giumar11/info_MIB/4.1-proxy-indicator-methodology
+- Chatbot API/query patterns: https://deepwiki.com/giumar11/info_MIB/6.5-chatbot-api-and-query-patterns
+- Key dataset references: https://deepwiki.com/giumar11/info_MIB/7-key-dataset-references
+- SDO detail page: https://deepwiki.com/giumar11/info_MIB/7.1-sdo-hospital-discharge-data
+- EHIS detail page: https://deepwiki.com/giumar11/info_MIB/7.2-istat-ehis-survey-data
+
+High-value queries to enrich this repo's analysis (to run against ingested datasets/warehouse):
+
+1) **Regional access-outcome coupling**
+- Goal: test whether higher waiting-time pressure co-occurs with weaker outcomes.
+- Inputs: PNLA/PNGLA + PNE + LEA/NSG.
+- Example query question: "For each region and quarter, how do waiting-time indicators (priority classes U/B/D/P) correlate with selected PNE outcome indicators and NSG macro-area scores?"
+
+2) **Diagnostic odyssey proxy by complexity class**
+- Goal: build a patient-facing complexity map that is evidence-grounded.
+- Inputs: Orphanet prevalence classes + SDO diagnosis/procedure patterns + EHIS multimorbidity indicators.
+- Example query question: "Which pathology groups (rare/onco/multimorbidity/complex chronic) show the highest estimated multi-specialist burden by age segment and region?"
+
+3) **Handoff risk hotspots in care pathways**
+- Goal: identify where patient momentum loss is most likely in real SSN flow.
+- Inputs: SDO discharge/transfer patterns + PNLA waiting-time constraints.
+- Example query question: "Which region-service combinations show high transfer/retake signals plus long waits, suggesting handoff bottlenecks?"
+
+4) **Equity and variance scan**
+- Goal: make "regional feasibility" concrete in personas/summaries.
+- Inputs: LEA/NSG + PNLA/PNGLA + EHIS.
+- Example query question: "Where do service access constraints (waits) and self-reported unmet need co-occur, and how stable is this over time?"
+
+5) **Procurement readiness signal (insurer cohort)**
+- Goal: provide governance-facing evidence packs tied to measurable outcomes.
+- Inputs: PNE + LEA/NSG + PNLA/PNGLA (plus governance metadata from AGENAS/MoH).
+- Example query question: "For each region, what minimal KPI bundle best captures outcome impact + access impact + compliance trajectory for digital pathway interventions?"
+
+6) **Chatbot retrieval quality checks (Geen.ai-style routing)**
+- Goal: ensure specialist suggestions are backed by robust source joins.
+- Inputs: processed pathology-specialist mappings + proxy indicator outputs.
+- Example query question: "For top N pathology intents, how often does retrieval return specialist sets consistent with proxy class and regional feasibility constraints?"
 
 ---
 
-## 5) Concrete Next-Step Work Items (If You Want This Integrated)
+## 5) Unified Evidence Pattern: sources_catalog.csv
 
-1) Lock scope to Italy/SSN (this repo's target) and deprecate US-only artifacts.
-- Mark US-only sources/claims as legacy/out-of-scope and remove them from any Italy-facing synthesis.
-- Redefine the `insurer` cohort into an Italy/SSN purchaser/governance cohort and rebuild claims using Italy/EU regulatory and institutional sources.
+To ensure machine-readable traceability (as described in DeepWiki), the repository should adopt a central `sources_catalog.csv` located in `analysis/persona_db/01_sources/`.
 
-2) Add system-capacity constraints to patient personas.
-- Add sources/claims from PNGLA/PNE/LEA and introduce a “regional feasibility” section per patient persona.
+**Catalog Structure:**
 
-3) Add condition complexity scoring into persona_db.
-- Use Orphanet/SDO/ISTAT sources to generate claims like “rare diseases correlate with prolonged diagnostic odyssey and multi-specialist routing” (must be source-grounded).
+| Field | Description | Example |
+| :--- | :--- | :--- |
+| **id** | Unique identifier | `SOURCE-AGENAS-PNE-2025` |
+| **owner** | Institutional owner | `AGENAS` |
+| **category** | Data type | `outcome_kpi`, `survey_microdata`, `waiting_times` |
+| **geography** | Scope | `Italy`, `Region (NUTS2)` |
+| **url** | Primary entry point | `https://pne.agenas.it/` |
+| **file_paths** | Local cache path | `datasets/raw/sistema_sanitario/italia/...` |
+| **last_checked** | Date of last verification | `2026-02-25` |
 
-4) Update final summary.
-- Ensure the summary only cites Italy/EU sources/claims, and add an Italy-specific appendix: operational constraints, regional variance, and how to measure impact.
+---
+
+## 6) Concrete Next-Step Work Items (If You Want This Integrated)
+
+1) Scope and cohort discipline (done)
+- Italy/SSN scope lock is in place.
+- `insurer` is treated as Italy/SSN procurement/governance stakeholders.
+
+2) Add system-capacity constraints to patient and procurement journey models (pending)
+- Ingest PNLA/PNGLA, PNE, NSG/LEA, EHIS, and SDO as `SOURCE-*` records and extract `CLAIM-*` about regional variance, waiting-time constraints, and outcome anchors.
+- Add a "regional feasibility" section per patient persona and an "implementation feasibility" section per insurer persona.
+
+3) Add condition complexity scoring into persona_db (pending)
+- Use Orphanet + SDO + EHIS to ground a "specialist complexity" layer (proxy categories + routing/sequence hypotheses) and feed it into journey maps.
+
+4) Keep summaries aligned (in progress)
+- Update `analysis/final_analysis_summary.md` as new system-capacity and regional-variance claims are added.
