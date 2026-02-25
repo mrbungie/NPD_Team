@@ -18,6 +18,13 @@ This document is an interview record.
 
 ## Responses
 
+
+### Q: PUS-Q00
+- question_type: profile
+- answer: age: 47; region: Campania; role: patient; cohort_specific_context: condition_duration_months 24; ssn_or_private_mix mostly_ssn
+- source_refs:
+  - SOURCE-20260225-021
+
 ### Q: PUS-Q01
 - question_type: multi_choice
 - answer: primary_care_mmg, search_engine
@@ -26,7 +33,7 @@ This document is an interview record.
 
 ### Q: PUS-Q02
 - question_type: rating_scale 0-10
-- answer: (not captured in this interview)
+- answer: not_captured
 - source_refs:
   - SOURCE-20260225-021
 
@@ -54,13 +61,13 @@ This document is an interview record.
 
 ### Q: PUS-Q06
 - question_type: numeric
-- answer: (not captured in this interview)
+- answer: not_captured
 - source_refs:
   - SOURCE-20260225-021
 
 ### Q: PUS-Q07
 - question_type: numeric
-- answer: (not captured in this interview)
+- answer: not_captured
 - source_refs:
   - SOURCE-20260225-021
 
@@ -72,7 +79,7 @@ This document is an interview record.
 
 ### Q: PUS-Q09
 - question_type: rating_scale 0-10
-- answer: (not captured in this interview)
+- answer: not_captured
 - claim_refs:
   - CLAIM-20260224-014
 - source_refs:

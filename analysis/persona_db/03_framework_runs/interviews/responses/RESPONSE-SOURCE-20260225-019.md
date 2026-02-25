@@ -18,6 +18,13 @@ This document is an interview record.
 
 ## Responses
 
+
+### Q: PUS-Q00
+- question_type: profile
+- answer: age: 31; region: Toscana; role: patient; cohort_specific_context: condition_duration_months 4; ssn_or_private_mix mixed
+- source_refs:
+  - SOURCE-20260225-019
+
 ### Q: PUS-Q01
 - question_type: multi_choice
 - answer: symptom_checker, search_engine, friends_family
@@ -28,7 +35,7 @@ This document is an interview record.
 
 ### Q: PUS-Q02
 - question_type: rating_scale 0-10
-- answer: (not captured in this interview)
+- answer: not_captured
 - source_refs:
   - SOURCE-20260225-019
 
@@ -56,13 +63,13 @@ This document is an interview record.
 
 ### Q: PUS-Q06
 - question_type: numeric
-- answer: (not captured in this interview)
+- answer: not_captured
 - source_refs:
   - SOURCE-20260225-019
 
 ### Q: PUS-Q07
 - question_type: numeric
-- answer: (not captured in this interview)
+- answer: not_captured
 - source_refs:
   - SOURCE-20260225-019
 
@@ -74,7 +81,7 @@ This document is an interview record.
 
 ### Q: PUS-Q09
 - question_type: rating_scale 0-10
-- answer: (not captured in this interview)
+- answer: not_captured
 - claim_refs:
   - CLAIM-20260224-014
 - source_refs:
