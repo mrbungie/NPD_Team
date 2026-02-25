@@ -25,10 +25,16 @@ This document is an interview record.
 
 ## Responses
 
+### Q: [PROFILE_QUESTION_ID]  (PUS-Q00 or INS-Q00)
+- question_type: profile
+- answer: age: ...; region: ...; role: ...; cohort_specific_context: ...
+- source_refs:
+  - SOURCE-...
+
 ### Q: [QUESTION_ID]
 
 - question_type:
-- answer:
+- answer: (use explicit tokens like `not_captured` or `prefer_not_to_say` instead of leaving blank)
 - other (if applicable):
 - claim_refs: (optional)
   - CLAIM-...

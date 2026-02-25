@@ -10,4 +10,5 @@ The `SOURCE-*` record is the canonical evidence ID; this folder is the storage l
 Conventions:
 - Filename includes the `SOURCE-*` ID (e.g., `RESPONSE-SOURCE-20260225-015.md`).
 - `response_mode` is always explicit (`direct_interview` vs `synthetic_interview`).
-- Structured answers may be blank if not captured.
+- Always include the profile question (`PUS-Q00` or `INS-Q00`) in the Responses section, even if the same data also appears in frontmatter.
+- Do not leave `answer` blank. If a value was not collected, use an explicit token like `not_captured` (or `prefer_not_to_say`).

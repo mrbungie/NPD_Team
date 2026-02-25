@@ -33,6 +33,7 @@ Reason:
 - `cohort`: `insurer` or `patient_unknown_symptom`
 - `response_mode`: `direct_interview` or `synthetic_interview`
 - `respondent_profile`: profile object including person-level attributes
+- `PUS-Q00` / `INS-Q00`: profile question must be recorded in the Responses section (not only frontmatter)
 - `question_id`
 - `question_type`: `single_choice` | `multi_choice` | `rating_scale` | `numeric` | `free_text`
 - `claim_refs`
@@ -78,6 +79,9 @@ For each interview run, include:
 - Interview setup summary (objective, cohort, instrument_id, response mode)
 - Full question-by-question responses with mixed answer types
 - Traceability mapping from each response to `CLAIM-*` and `SOURCE-*`
+
+Answer recording rules:
+- Do not leave `answer` blank. Use explicit tokens like `not_captured` or `prefer_not_to_say`.
 
 ## Versioning
 
