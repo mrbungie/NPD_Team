@@ -23,7 +23,8 @@ Reason:
 - structured data answers (single-choice, multi-choice, rating scales, numeric values)
 - free-text interview answers
 4. If respondents are simulated from existing evidence, label outputs as `synthetic interview answers`.
-5. Map each answer to `CLAIM-*` and `SOURCE-*` references.
+5. Record `SOURCE-*` references for each answer.
+6. Map answers to `CLAIM-*` references when the answer is explicitly grounded in an existing claim set (or after you extract new claims from the interview).
 
 ## Output Metadata (Mandatory)
 
@@ -66,7 +67,8 @@ Use `analysis/persona_db/03_framework_runs/interviews/templates/interview_respon
 - Keep interview labeling explicit:
   - `Interview answer` for direct respondent data
   - `Synthetic interview answer` for evidence-generated response
-- Do not invent numeric values not grounded in sources.
+- Do not invent numeric values unless they were captured in a real interview.
+- For synthetic interviews, leave numeric fields blank unless the number is explicitly grounded in the evidence chain.
 - Preserve existing interview content when migrating to this instrument.
 - Keep context geography explicit: Italy (`SSN`, regional health systems, Italian/EU compliance context).
 

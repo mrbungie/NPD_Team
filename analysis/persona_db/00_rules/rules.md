@@ -35,4 +35,10 @@ This repository is Italy-focused.
 - Use Italy/EU context for research interpretation and interview synthesis.
 - US-only regulatory assumptions must not be used as final grounding for Italy deliverables.
 
-No additional frameworks, such as Jobs-to-be-Done or empathy maps, are to be integrated until the next version.
+No additional standalone frameworks (for example: adding a new JTBD stage) are to be integrated until the next version.
+
+However, interview instruments and interview responses may include:
+- empathy-map style prompts (think/feel/say/do)
+- customer journey mapping prompts (stages, touchpoints, breakdowns, opportunities)
+
+These outputs must be treated as interview evidence (SOURCE-*) and can be converted into explicit claims (CLAIM-*) when used in personas/synthesis.

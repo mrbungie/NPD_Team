@@ -179,6 +179,58 @@ If responses are generated from evidence rather than live respondents, label the
 - Prompt: What success metrics would you use to decide whether to expand after a pilot?
 - Answer:
 
+## Section F: Empathy Map (Product Development)
+
+16) `INS-Q16` (free_text)
+- Prompt: What are you thinking during evaluation that you don't always say explicitly (political constraints, hidden vetoes, reputational risk)?
+- Answer:
+
+17) `INS-Q17` (free_text)
+- Prompt: What makes you feel confident vs anxious about approving a pilot?
+- Answer:
+
+18) `INS-Q18` (multi_choice)
+- Prompt: What are the core "jobs" you are trying to get done with a digital health solution? (Choose up to 3.)
+- Options:
+  - support_policy_or_procurement_decision
+  - improve_access_or_continuity
+  - reduce_operational_burden
+  - improve_measurement_and_monitoring
+  - reduce_risk_and_ensure_compliance
+  - enable_interoperability_and_scaling
+  - other (specify)
+  - prefer_not_to_say
+- Answer(s):
+- Other (if selected):
+
+## Section G: Customer Journey Map (Procurement and Adoption)
+
+19) `INS-Q19` (multi_choice)
+- Prompt: Which stages are real in your procurement/adoption journey? (Choose all that apply.)
+- Options:
+  - need_identification
+  - prioritization
+  - hta_appraisal
+  - tender_or_procurement
+  - privacy_and_legal
+  - security_and_it
+  - integration_and_interoperability
+  - pilot
+  - scale_out
+  - monitoring_and_reporting
+  - other (specify)
+  - prefer_not_to_say
+- Answer(s):
+- Other (if selected):
+
+20) `INS-Q20` (free_text)
+- Prompt: Where does this journey most often break down (the step that kills a proposal)? Give one concrete example.
+- Answer:
+
+21) `INS-Q21` (free_text)
+- Prompt: What would make that breakdown moment 30% easier?
+- Answer:
+
 ## Traceability (Required)
 
 For each answer, record:

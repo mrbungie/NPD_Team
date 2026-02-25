@@ -187,6 +187,60 @@ If responses are generated from evidence rather than live respondents, label the
 - Prompt: In your own words, what do you need most right now to move forward?
 - Answer:
 
+## Section E: Empathy Map (Product Development)
+
+15) `PUS-Q15` (free_text)
+- Prompt: When you're in the middle of this situation, what are you thinking that you don't always say out loud?
+- Answer:
+
+16) `PUS-Q16` (free_text)
+- Prompt: What feelings show up most often (before, during, and after appointments)?
+- Answer:
+
+17) `PUS-Q17` (multi_choice)
+- Prompt: Which of these "jobs" are you trying to get done? (Choose up to 3.)
+- Options:
+  - decide_if_urgent
+  - get_taken_seriously
+  - get_to_right_specialist
+  - reduce_repeat_story
+  - interpret_tests
+  - manage_anxiety
+  - coordinate_appointments
+  - other (specify)
+  - prefer_not_to_say
+- Answer(s):
+- Other (if selected):
+
+## Section F: Customer Journey Map (Product Development)
+
+18) `PUS-Q18` (multi_choice)
+- Prompt: Which stages show up in your journey? (Choose all that apply.)
+- Options:
+  - symptom_onset
+  - self_triage
+  - online_search
+  - community_sensemaking
+  - pharmacy
+  - mmg_visit
+  - specialist_visit
+  - diagnostics
+  - follow_up
+  - admin_and_booking
+  - work_family_impact
+  - other (specify)
+  - prefer_not_to_say
+- Answer(s):
+- Other (if selected):
+
+19) `PUS-Q19` (free_text)
+- Prompt: Where does the journey most often break down (the moment you lose momentum)? Describe one concrete example.
+- Answer:
+
+20) `PUS-Q20` (free_text)
+- Prompt: What would have made that breakdown moment 30% easier?
+- Answer:
+
 ## Traceability (Required)
 
 For each answer, record:

@@ -20,7 +20,8 @@ This document is an interview record.
 - Answer questions in order using the instrument IDs.
 - For structured questions, record the selected option(s) or numeric value.
 - For free-text questions, record the interview answer verbatim (or synthetic interview answer if evidence-generated).
-- For every answer, list `claim_refs` and `source_refs`.
+- For every answer, list `source_refs`.
+- If the answer was generated from (or mapped to) explicit claims, also list `claim_refs`.
 
 ## Responses
 
@@ -29,7 +30,7 @@ This document is an interview record.
 - question_type:
 - answer:
 - other (if applicable):
-- claim_refs:
+- claim_refs: (optional)
   - CLAIM-...
 - source_refs:
   - SOURCE-...
