@@ -18,25 +18,25 @@ If your "evidence" is only internal docs like `STRUCTURE.md` or generic UX/frame
 You must produce and keep consistent:
 
 1. Evidence records
-- `methodology/persona_db/01_sources/SOURCE-*.md`
-- `methodology/persona_db/02_claims/CLAIM-*.md`
+- `analysis/persona_db/01_sources/SOURCE-*.md`
+- `analysis/persona_db/02_claims/CLAIM-*.md`
 
 2. Framework applications
-- `methodology/persona_db/03_framework_runs/do/**/RUN-*.md`
-- `methodology/persona_db/03_framework_runs/say/**/RUN-*.md`
-- `methodology/persona_db/03_framework_runs/kawakita/**/RUN-*.md`
-- `methodology/persona_db/03_framework_runs/value/**/RUN-*.md` (Kano)
+- `analysis/persona_db/03_framework_runs/do/**/RUN-*.md`
+- `analysis/persona_db/03_framework_runs/say/**/RUN-*.md`
+- `analysis/persona_db/03_framework_runs/kawakita/**/RUN-*.md`
+- `analysis/persona_db/03_framework_runs/value/**/RUN-*.md` (Kano)
 
 3. Personas
-- `methodology/persona_db/04_personas/insurer/PERSONA-*.md`
-- `methodology/persona_db/04_personas/patient_unknown_symptom/PERSONA-*.md`
+- `analysis/persona_db/04_personas/insurer/PERSONA-*.md`
+- `analysis/persona_db/04_personas/patient_unknown_symptom/PERSONA-*.md`
 
 4. Synthesis
-- `methodology/persona_db/05_synthesis/synthesis-insurer.md`
-- `methodology/persona_db/05_synthesis/synthesis-patient_unknown_symptom.md`
-- `methodology/persona_db/05_synthesis/clusters/CLUSTER-*.md`
+- `analysis/persona_db/05_synthesis/synthesis-insurer.md`
+- `analysis/persona_db/05_synthesis/synthesis-patient_unknown_symptom.md`
+- `analysis/persona_db/05_synthesis/clusters/CLUSTER-*.md`
 
-Governance rules live in `methodology/persona_db/00_rules/rules.md`.
+Governance rules live in `analysis/persona_db/00_rules/rules.md`.
 
 ---
 
