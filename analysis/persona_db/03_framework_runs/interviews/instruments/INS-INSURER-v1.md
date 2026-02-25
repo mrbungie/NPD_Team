@@ -1,4 +1,4 @@
-# Survey-Interview Instrument: Insurer and Health-System Stakeholders (INS-INSURER-v1)
+# Survey-Interview Instrument: Payer / Procurement Stakeholders (INS-INSURER-v1)
 
 This instrument is designed for a human stakeholder interview.
 
