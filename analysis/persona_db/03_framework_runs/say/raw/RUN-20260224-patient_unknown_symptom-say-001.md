@@ -38,7 +38,7 @@ Question-by-question synthetic interview answers (subset of instrument):
 - Source refs: `SOURCE-20260224-002`
 
 2. `PUS-Q02` (rating_scale 0-10)
-- Answer: (not captured in this interview)
+- Answer: not_captured
 - Claim refs: `CLAIM-20260224-008`
 - Source refs: `SOURCE-20260224-003`
 
