@@ -3,16 +3,16 @@
 This synthesis aggregates evidence-grounded claims and framework runs into a cross-persona view of what patients with unknown/unexplained symptoms do, say, and value.
 
 ## Evidence Base
-- Sources: `methodology/persona_db/01_sources/` (IDs: SOURCE-20260224-001 through SOURCE-20260224-007)
-- Claims: `methodology/persona_db/02_claims/` (IDs: CLAIM-20260224-001 through CLAIM-20260224-015)
-- Runs: `methodology/persona_db/03_framework_runs/` (IDs: RUN-20260224-patient_unknown_symptom-*)
+- Sources: `analysis/persona_db/01_sources/` (IDs: SOURCE-20260224-001 through SOURCE-20260224-006; plus Italy anchors like SOURCE-20260225-011 and SOURCE-20260225-012)
+- Claims: `analysis/persona_db/02_claims/` (IDs: CLAIM-20260224-001 through CLAIM-20260224-015; plus Italy anchors like CLAIM-20260225-011 and CLAIM-20260225-012)
+- Runs: `analysis/persona_db/03_framework_runs/` (IDs: RUN-20260224-patient_unknown_symptom-*)
 
 ## Canonical Journey (DO)
 - New/unfamiliar symptoms trigger self-triage and checking behaviors. (Claim: CLAIM-20260224-004)
 - Patients combine symptom checkers with online community support and information seeking. (Claim: CLAIM-20260224-002)
 - Follow-through branches into self-treatment, waiting, or seeking care; disclosure to clinicians is inconsistent. (Claim: CLAIM-20260224-005)
 - Access friction (stigma, logistics, "normal" results, affordability) changes persistence and behavior. (Claim: CLAIM-20260224-009)
-- Records access is increasingly app-based, but multi-portal fragmentation is common and aggregation use is low. (Claims: CLAIM-20260224-011, CLAIM-20260224-012)
+- Italy/SSN record access is structured around FSE 2.0 with explicit nationwide diffusion/omogeneita/accessibilita and cross-region interoperability goals. (Claims: CLAIM-20260225-011, CLAIM-20260225-012)
 
 ## Canonical Language (SAY)
 - Peer similarity seeking and uncertainty talk are central ("This is happening to me" / "Is this happening to you?"). (Claim: CLAIM-20260224-003)
@@ -36,4 +36,4 @@ Delighters
 - Legitimacy + Access Friction cluster: `CLUSTER-patient_unknown_symptom-002-legitimacy-and-access-friction`
 
 ## Open Hypotheses to Validate Next
-- Whether portal/app fragmentation correlates with repeat-history burden in unknown-symptom journeys (requires primary qualitative data beyond current sources). (Claim: CLAIM-20260224-011)
+- Whether FSE 2.0 cross-region interoperability and "single access" actually reduces repeat-history burden in unknown-symptom journeys, or whether patients still experience documentation gaps in practice. (Claim: CLAIM-20260225-012)

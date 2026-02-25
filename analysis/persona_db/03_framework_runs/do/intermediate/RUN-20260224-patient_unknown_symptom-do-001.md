@@ -8,9 +8,8 @@ inputs:
   - CLAIM-20260224-004
   - CLAIM-20260224-005
   - CLAIM-20260224-009
-  - CLAIM-20260224-011
-  - CLAIM-20260224-012
-  - CLAIM-20260224-013
+  - CLAIM-20260225-011
+  - CLAIM-20260225-012
   - CLAIM-20260224-014
 raw_output:
 intermediate_output: inline
@@ -36,6 +35,5 @@ Draft behavioral journey (not a value judgement):
    - Non-disclosure to clinician about app use.
    (Claim: CLAIM-20260224-005)
 4. System friction: stigma + logistics + "normal" results + affordability change follow-through and persistence. (Claim: CLAIM-20260224-009)
-5. Documentation loop: patient portal/app access is used to review or retrieve records, but fragmentation across portals is common and consolidation behavior is rare. (Claims: CLAIM-20260224-011, CLAIM-20260224-012)
+5. Documentation loop: in Italy, citizens can consult health records/data and SSN services via FSE 2.0; the program explicitly targets nationwide diffusion/omogeneita/accessibilita and cross-region interoperability. (Claims: CLAIM-20260225-011, CLAIM-20260225-012)
 6. Clinician handoff: patients benefit when information is structured for clinicians (e.g., fact sheets/AI analysis framing). (Claim: CLAIM-20260224-014)
-7. Adoption lever: clinician encouragement increases portal use and could plausibly influence app adoption in adjacent workflows. (Claim: CLAIM-20260224-013)

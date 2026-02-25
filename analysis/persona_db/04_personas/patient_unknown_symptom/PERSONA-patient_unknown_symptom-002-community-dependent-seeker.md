@@ -17,8 +17,9 @@ claim_refs:
   - CLAIM-20260224-003
   - CLAIM-20260224-009
   - CLAIM-20260224-010
-  - CLAIM-20260224-011
-  - CLAIM-20260224-012
+  - CLAIM-20260224-014
+  - CLAIM-20260225-011
+  - CLAIM-20260225-012
 ---
 
 # Persona: Community-Dependent Seeker
@@ -34,11 +35,11 @@ Operates inside long periods of uncertainty and access friction; relies on onlin
 ## Top 3 Motivations and Pain Points (SAY/DO)
 - **Motivation/Pain 1**: Seeks meaning in symptoms and diagnostic concerns; uses community language and themes to orient. (Claim: CLAIM-20260224-003)
 - **Motivation/Pain 2**: Feels pressure to defend legitimacy and credibility in the face of stigma or dismissal. (Claim: CLAIM-20260224-010)
-- **Motivation/Pain 3**: Struggles with fragmented records and low practical consolidation across portals. (Claims: CLAIM-20260224-011, CLAIM-20260224-012)
+- **Motivation/Pain 3**: Struggles to keep a coherent story across episodes while the journey stretches over time and providers; wants records/services access via FSE 2.0 to be usable in practice. (Claims: CLAIM-20260224-001, CLAIM-20260225-011)
 
 ## Ranked Decision Criteria (SAY/VALUE)
 1. **Validation**: Needs to be believed and to confirm symptoms are shared/real. (Claim: CLAIM-20260224-010)
-2. **Continuity**: Wants one coherent story across episodes and systems (records, notes, context). (Claim: CLAIM-20260224-011)
+2. **Continuity**: Wants one coherent story across episodes and systems (records, notes, context) that can be shared with clinicians. (Claims: CLAIM-20260224-014, CLAIM-20260225-011)
 3. **Actionable next step**: Prefers clear options when access friction is high. (Claim: CLAIM-20260224-009)
 
 ## Barriers, Anxieties, and Triggers (DO)
@@ -48,12 +49,12 @@ Operates inside long periods of uncertainty and access friction; relies on onlin
 
 ## Preferred Channels and Touchpoints (DO)
 - Online communities: information-seeking and support-seeking to manage uncertainty. (Claim: CLAIM-20260224-002)
-- Patient portals/apps: access to records, despite fragmentation across portals. (Claim: CLAIM-20260224-011)
+- FSE 2.0 / regional portals: access to SSN records and services. (Claim: CLAIM-20260225-011)
 
 ## Design Implications
 - **Messaging**: Use legitimacy-preserving language; acknowledge stigma and "normal tests" without dismissing symptoms. (Claims: CLAIM-20260224-010, CLAIM-20260224-009)
-- **Offer**: Help assemble a coherent, shareable narrative from fragmented sources. (Claim: CLAIM-20260224-011)
-- **UX/Service**: Reduce switching cost across portals/records; make consolidation explicit and safe. (Claim: CLAIM-20260224-012)
+- **Offer**: Help assemble a coherent, shareable narrative for clinicians (structured artifacts + analysis). (Claim: CLAIM-20260224-014)
+- **UX/Service**: Make cross-Region interoperability constraints explicit; support workflows that work with FSE/EDS integration reality. (Claim: CLAIM-20260225-012)
 - **Trust**: Make uncertainty explicit; do not overclaim certainty when evidence is limited. (Claim: CLAIM-20260224-001)
 - **Channel**: Community-adjacent onboarding and peer-language support. (Claim: CLAIM-20260224-003)
 

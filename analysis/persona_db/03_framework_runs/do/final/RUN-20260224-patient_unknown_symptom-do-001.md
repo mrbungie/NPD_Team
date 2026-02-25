@@ -8,9 +8,8 @@ inputs:
   - CLAIM-20260224-004
   - CLAIM-20260224-005
   - CLAIM-20260224-009
-  - CLAIM-20260224-011
-  - CLAIM-20260224-012
-  - CLAIM-20260224-013
+  - CLAIM-20260225-011
+  - CLAIM-20260225-012
   - CLAIM-20260224-014
 raw_output:
 intermediate_output:
@@ -32,6 +31,5 @@ Canonical DO behaviors to model in personas:
 3. Symptom checker usage as first response to new/unfamiliar symptoms. (Claim: CLAIM-20260224-004)
 4. Diverse follow-through patterns after self-triage (self-treat, wait, seek care, or ignore guidance; some avoid clinician disclosure). (Claim: CLAIM-20260224-005)
 5. Access friction materially changes behavior and persistence (stigma/logistics/"normal" results/affordability). (Claim: CLAIM-20260224-009)
-6. Records access via apps is increasingly common, but multi-portal fragmentation is typical and aggregation behavior is rare. (Claims: CLAIM-20260224-011, CLAIM-20260224-012)
-7. Provider encouragement is a leverage point for portal engagement. (Claim: CLAIM-20260224-013)
-8. Patients need clinician-ready outputs that support faster recognition and routing (structured artifacts + AI analysis). (Claim: CLAIM-20260224-014)
+6. In Italy, citizens can consult health records/data and SSN services via FSE 2.0; nationwide diffusion/omogeneita/accessibilita and cross-region interoperability are explicit program goals. (Claims: CLAIM-20260225-011, CLAIM-20260225-012)
+7. Patients need clinician-ready outputs that support faster recognition and routing (structured artifacts + AI analysis). (Claim: CLAIM-20260224-014)

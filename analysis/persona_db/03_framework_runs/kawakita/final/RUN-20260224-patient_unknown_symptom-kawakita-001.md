@@ -25,6 +25,3 @@ Cluster B: Escalation calibration
 
 Cluster C: Legitimacy defense
 - Primary mode: overcome stigma/dismissal and interpret "normal" test results without losing credibility. (Claims: CLAIM-20260224-010, CLAIM-20260224-009)
-
-Cluster D: Authority nudges
-- Primary mode: clinician encouragement changes tool adoption and follow-through. (Claim: CLAIM-20260224-013)

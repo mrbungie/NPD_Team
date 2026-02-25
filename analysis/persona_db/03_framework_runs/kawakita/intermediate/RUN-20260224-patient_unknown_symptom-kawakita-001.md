@@ -25,6 +25,3 @@ Cluster 2: Alarm + escalation control
 
 Cluster 3: Legitimacy + being believed
 - Stigma, dismissal; emphasize symptoms are real; frustration with "normal" results. (Claims: CLAIM-20260224-010, CLAIM-20260224-009)
-
-Cluster 4: Authority-driven actions
-- Behavior changes when clinician encourages portal/tool use. (Claim: CLAIM-20260224-013)

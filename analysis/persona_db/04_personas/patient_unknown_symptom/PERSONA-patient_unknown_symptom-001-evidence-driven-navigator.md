@@ -21,9 +21,8 @@ claim_refs:
   - CLAIM-20260224-008
   - CLAIM-20260224-009
   - CLAIM-20260224-010
-  - CLAIM-20260224-011
-  - CLAIM-20260224-012
-  - CLAIM-20260224-013
+  - CLAIM-20260225-011
+  - CLAIM-20260225-012
   - CLAIM-20260224-014
 ---
 
@@ -48,21 +47,20 @@ Often starts when new/unfamiliar symptoms appear; uses symptom checker apps and 
 3. **Clinician-ready output**: Wants outputs that can be used with clinicians to accelerate recognition/routing. (Claim: CLAIM-20260224-014)
 
 ## Barriers, Anxieties, and Triggers (DO)
-- **Barriers**: Multi-portal fragmentation; consolidation is rare in practice. (Claims: CLAIM-20260224-011, CLAIM-20260224-012)
+- **Barriers/Context**: In Italy, records/SSN services access is structured around FSE 2.0 and cross-region interoperability is an explicit program goal. (Claims: CLAIM-20260225-011, CLAIM-20260225-012)
 - **Anxieties**: Risk-averse triage and serious suggestions can unsettle. (Claim: CLAIM-20260224-008)
 - **Triggers**: New and unfamiliar symptoms prompt immediate self-triage behavior. (Claim: CLAIM-20260224-004)
 
 ## Preferred Channels and Touchpoints (DO)
 - Symptom checker apps: used when symptoms first occur to determine next action. (Claim: CLAIM-20260224-004)
 - Online communities: used for information-seeking and support-seeking. (Claim: CLAIM-20260224-002)
-- Patient portals / apps: used to access records, though fragmentation is common. (Claim: CLAIM-20260224-011)
+- FSE 2.0 / regional portals: used to access SSN records and services. (Claim: CLAIM-20260225-011)
 
 ## Design Implications
 - **Messaging**: Validate legitimacy and "being believed" needs; avoid implying symptoms are imagined. (Claim: CLAIM-20260224-010)
 - **Offer**: Provide structured outputs clinicians can use to reduce diagnostic delays. (Claim: CLAIM-20260224-014)
 - **UX/Service**: Support nuanced symptom capture and personalization. (Claim: CLAIM-20260224-006)
 - **Trust**: Calibrate urgency; explicitly prevent over-alarming escalation patterns. (Claim: CLAIM-20260224-008)
-- **Channel**: Encourage clinician endorsement flows; provider encouragement increases portal use and may improve adoption. (Claim: CLAIM-20260224-013)
 
 ---
 

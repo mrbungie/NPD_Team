@@ -8,8 +8,8 @@ inputs:
   - CLAIM-20260224-004
   - CLAIM-20260224-005
   - CLAIM-20260224-009
-  - CLAIM-20260224-011
-  - CLAIM-20260224-012
+  - CLAIM-20260225-011
+  - CLAIM-20260225-012
   - CLAIM-20260224-014
   - CLAIM-20260224-015
 raw_output: inline
@@ -35,6 +35,5 @@ Observed behavioral fragments supported by the input claims:
 3. Symptom checker usage is triggered by new/unfamiliar symptom onset. (Claim: CLAIM-20260224-004)
 4. After symptom checker use: behaviors branch into self-treatment, waiting, scheduling care, seeking more info, or ignoring app guidance; some avoid discussing app use with clinicians. (Claim: CLAIM-20260224-005)
 5. Access barriers shape actions: stigma, appointment logistics, "normal" test results, affordability pressures. (Claim: CLAIM-20260224-009)
-6. Digital record access is increasingly app-based; many have fragmented portals, but consolidation app usage is low. (Claims: CLAIM-20260224-011, CLAIM-20260224-012)
-7. Provider encouragement changes portal behavior (adoption lever). (Claim: CLAIM-20260224-013)
-8. Clinical acceleration artifacts exist: clinician-ready fact sheets + AI analysis are proposed to combat diagnostic delays. (Claim: CLAIM-20260224-014)
+6. In Italy, citizens can consult health records/data and SSN services via FSE 2.0, with nationwide diffusion/omogeneita/accessibilita and cross-region interoperability as explicit program goals. (Claims: CLAIM-20260225-011, CLAIM-20260225-012)
+7. Clinical acceleration artifacts exist: clinician-ready fact sheets + AI analysis are proposed to combat diagnostic delays. (Claim: CLAIM-20260224-014)

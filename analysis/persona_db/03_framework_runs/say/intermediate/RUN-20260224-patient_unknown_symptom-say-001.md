@@ -6,18 +6,24 @@ inputs:
   - CLAIM-20260224-003
   - CLAIM-20260224-008
   - CLAIM-20260224-010
-  - CLAIM-20260224-013
 raw_output:
 intermediate_output: inline
 final_output:
 run_date: 2026-02-24
 prompt_fingerprint: grounded-say-v1-20260224
+tool_version: interview-method-tool-v2
+instrument_id: INS-PUS-v1
+response_mode: synthetic_interview
 ---
 
 # Framework Run (Intermediate): SAY - patient_unknown_symptom
 
 ## Purpose
 Group SAY fragments into initial themes for clustering.
+
+## Instrument Consistency
+- Themes are grouped from responses collected via `INS-PUS-v1`.
+- Profile fields used in grouping: age, region, role.
 
 ## Intermediate Output
 Draft SAY themes:
@@ -30,6 +36,3 @@ Theme B: "Don't panic me" (risk-averse triage anxiety)
 
 Theme C: "Believe me" (legitimacy / stigma / dismissal)
 - Patients emphasize legitimacy and being taken seriously. (Claim: CLAIM-20260224-010)
-
-Theme D: "My clinician told me to use this" (authority nudge)
-- Provider encouragement shifts behavior and reduces friction. (Claim: CLAIM-20260224-013)
