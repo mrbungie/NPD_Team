@@ -10,7 +10,7 @@
 
 This manifest defines the **canonical naming conventions, ID families, file paths, and storage rules** for the entire synthetic personas database. All records must conform to these rules or be rejected at validation.
 
-**⚠️ CRITICAL WARNING:** Do not store records outside this tree. All persona-related data must reside within `methodology/persona_db/`. Records found elsewhere are not authoritative.
+**⚠️ CRITICAL WARNING:** Do not store records outside this tree. All persona-related data must reside within `analysis/persona_db/`. Records found elsewhere are not authoritative.
 
 ---
 
@@ -19,7 +19,7 @@ This manifest defines the **canonical naming conventions, ID families, file path
 The database is organized into seven tiers, each with a specific purpose:
 
 ```
-methodology/persona_db/
+analysis/persona_db/
 ├── 00_rules/              # Governance, rules, templates
 │   ├── rules.md           # Ethics, refresh cycles, versioning
 │   ├── naming_manifest.md # This file

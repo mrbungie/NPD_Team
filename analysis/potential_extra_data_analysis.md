@@ -1,8 +1,8 @@
 # Potential Extra Data + Analysis (DeepWiki Review)
 
-This file captures additional context and data opportunities discovered by reviewing `https://deepwiki.com/giumar11/info_MIB`. It is intended to make the NPD investigation and downstream product decisions more complete and better localized.
+This file captures additional context and data opportunities discovered by reviewing `https://deepwiki.com/giumar11/info_MIB`. It is intended to make the NPD investigation and downstream product decisions more complete and Italy/SSN-localized.
 
-Important: much of the current `persona_db` insurer evidence is US-centric (CMS, etc.). The DeepWiki repo context is Italy/SSN-centric. If the product targets Italy/SSN navigation, we should localize the purchaser cohort and compliance assumptions.
+Important: some legacy `persona_db` insurer artifacts were originally built with out-of-scope (non-Italy) evidence. This repository's scope is Italy/SSN; non-Italy-only evidence must be treated as out-of-scope and should not be used to justify Italy product decisions.
 
 ---
 
@@ -55,16 +55,13 @@ Why this matters:
 
 ## 2) Gaps vs Current persona_db (What’s missing today)
 
-### 2.1 Geography and payer model mismatch
-Current insurer evidence uses:
-- CMS payer interoperability/prior authorization rules (US).
-
-If the product is Italy-first (SSN context), the “insurer” cohort likely needs to be redefined as one of:
+### 2.1 Stakeholder model mismatch (Italy/SSN)
+Some insurer/payer framing does not transfer to Italy/SSN. For Italy-first work, the "purchaser / governance" cohort should be defined in SSN terms, for example:
 - Regional health authority / ASL decision-maker
-- National/Regional governance stakeholders (AGENAS, Ministry of Health implementers)
-- Large provider networks operating under SSN constraints (procurement but public context)
+- National/Regional governance stakeholders (e.g., AGENAS; Ministry of Health implementers)
+- Public provider networks operating under SSN constraints (procurement and integration in a public context)
 
-This is not a small tweak: compliance, procurement cadence, and outcome measurement expectations differ.
+This is not a small tweak: procurement cadence, compliance assumptions (privacy, interoperability), and outcome measurement expectations differ.
 
 ### 2.2 More patient navigation realism
 Our `patient_unknown_symptom` evidence is strong on:
@@ -110,7 +107,7 @@ Why:
 
 ## 4) Recommended Additional Sources to Add (If We Expand persona_db)
 
-These are suggested for the next iteration (not yet added as persona_db sources/claims in this pass):
+These are suggested for the next iteration (not yet integrated into claims/personas in this file):
 
 ### Italy/SSN system constraints
 - AGENAS PNE (outcomes) documentation
@@ -118,6 +115,13 @@ These are suggested for the next iteration (not yet added as persona_db sources/
 - LEA/NSG monitoring documentation
 - Ministry of Health SDO documentation for discharge and diagnosis coding
 - ISTAT EHIS methodology and key access/behavior questions
+
+### Italy/EU digital health governance and interoperability
+- FSE 2.0 guidance (AgID) and implementation materials
+- Interoperability guidelines for public administrations (AgID)
+- Ecosistema Dati Sanitari (EDS) institutional materials and implementation updates
+- EU EHDS (European Health Data Space) regulation overview and obligations
+- Privacy authority (Garante) guidance relevant to health data processing and secondary use
 
 ### Rare disease navigation and centers
 - Orphanet: rare disease prevalence classes and reference center metadata
@@ -127,8 +131,9 @@ These are suggested for the next iteration (not yet added as persona_db sources/
 
 ## 5) Concrete Next-Step Work Items (If You Want This Integrated)
 
-1) Decide geography target for v1 (US payer vs Italy SSN vs other).
-- If Italy SSN: redefine the `insurer` cohort into a public/SSN purchaser cohort and rebuild insurer claims with Italian/EU regulatory sources.
+1) Lock scope to Italy/SSN (this repo's target) and deprecate US-only artifacts.
+- Mark US-only sources/claims as legacy/out-of-scope and remove them from any Italy-facing synthesis.
+- Redefine the `insurer` cohort into an Italy/SSN purchaser/governance cohort and rebuild claims using Italy/EU regulatory and institutional sources.
 
 2) Add system-capacity constraints to patient personas.
 - Add sources/claims from PNGLA/PNE/LEA and introduce a “regional feasibility” section per patient persona.
@@ -137,4 +142,4 @@ These are suggested for the next iteration (not yet added as persona_db sources/
 - Use Orphanet/SDO/ISTAT sources to generate claims like “rare diseases correlate with prolonged diagnostic odyssey and multi-specialist routing” (must be source-grounded).
 
 4) Update final summary.
-- Add an Italy-specific appendix: operational constraints, regional variance, and how to measure impact.
+- Ensure the summary only cites Italy/EU sources/claims, and add an Italy-specific appendix: operational constraints, regional variance, and how to measure impact.

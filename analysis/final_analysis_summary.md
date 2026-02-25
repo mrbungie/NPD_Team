@@ -2,12 +2,14 @@
 
 This is the product-development-facing output of the synthetic persona work.
 
-It is grounded in the evidence chain in `methodology/persona_db/`:
-- Sources: `methodology/persona_db/01_sources/`
-- Claims: `methodology/persona_db/02_claims/`
-- Framework runs: `methodology/persona_db/03_framework_runs/`
-- Personas: `methodology/persona_db/04_personas/`
-- Clusters + syntheses: `methodology/persona_db/05_synthesis/`
+Geographic scope: Italy (SSN and regional context).
+
+It is grounded in the evidence chain in `analysis/persona_db/`:
+- Sources: `analysis/persona_db/01_sources/`
+- Claims: `analysis/persona_db/02_claims/`
+- Framework runs: `analysis/persona_db/03_framework_runs/`
+- Personas: `analysis/persona_db/04_personas/`
+- Clusters + syntheses: `analysis/persona_db/05_synthesis/`
 
 ## 1) Scope and What This Enables
 
@@ -17,7 +19,7 @@ It is grounded in the evidence chain in `methodology/persona_db/`:
 - Patients with unknown/unexplained symptoms navigating uncertainty, care-seeking, and legitimacy.
 
 2) `insurer`
-- Payers/purchasers evaluating, contracting, and governing digital health solutions.
+- Italy/SSN procurement and governance stakeholders (Regions/ASL, national agencies) evaluating, procuring, and governing digital health solutions.
 
 ### What downstream teams should use this for
 - Define MVP scope and “table-stakes vs differentiators” (Kano)
@@ -35,21 +37,18 @@ It is grounded in the evidence chain in `methodology/persona_db/`:
 - A core value lever is moving from “uncertainty” to “clinician-usable communication” (structured, clinician-ready outputs that can reduce diagnostic delay). (Claim: CLAIM-20260224-014)
 
 ### Insurer/purchaser side
-- Purchasers gate adoption on **measurable clinical + economic outcomes**, and explicitly reject engagement-only evidence. (Claim: CLAIM-20260224-016)
-- Purchasers distrust vendor-built ROI models and state they cannot validate assumptions internally; auditability is a make-or-break requirement. (Claim: CLAIM-20260224-020)
-- Performance-based contracting (payment tied to outcomes) is used/planned and shapes negotiation posture. (Claim: CLAIM-20260224-018)
-- Compliance constraints are product requirements (FHIR APIs; prior authorization timeframes/denial reasons/reporting). (Claims: CLAIM-20260224-025, CLAIM-20260224-026)
-- AI adoption in utilization review/prior auth increases governance needs to avoid harm modes and wrongful denials. (Claims: CLAIM-20260224-027, CLAIM-20260224-028)
+- In Italy, procurement/governance decisions for medical devices (including digital health) are mediated by national HTA appraisal processes and recommendations (PNHTA-DM). (Claim: CLAIM-20260225-013)
+- For AI/DTx, AGENAS is developing an HTA evaluation framework including outcome measurement and privacy-compliant health-data utilization criteria. (Claim: CLAIM-20260225-015)
+- Interoperability and data backbone constraints are set by Italy's EDS and its interaction with FSE and national systems (e.g., Sistema TS). (Claim: CLAIM-20260225-014)
 
 ## 3) Evidence Strength Snapshot
 
 ### High-confidence foundations (examples)
 - Symptom checker usage determinants and user reactions (JMIR longitudinal mixed methods). (Claim: CLAIM-20260224-004)
 - Online community sensemaking patterns (PMC analysis). (Claim: CLAIM-20260224-002)
-- Government adoption patterns for portals/apps (ASTP/ONC). (Claims: CLAIM-20260224-011, CLAIM-20260224-012)
-- Purchaser evidence gating (PHTI survey). (Claim: CLAIM-20260224-016)
-- Regulatory requirements for payer APIs/prior auth (CMS). (Claims: CLAIM-20260224-025, CLAIM-20260224-026)
-- AI governance needs in insurance decision-making (Stanford HAI). (Claims: CLAIM-20260224-027, CLAIM-20260224-028)
+- Italy/SSN record access and interoperability objectives (FSE 2.0). (Claims: CLAIM-20260225-011, CLAIM-20260225-012)
+- Italy HTA/procurement governance anchor (PNHTA-DM). (Claim: CLAIM-20260225-013)
+- Italy national health data ecosystem (EDS) as interoperability backbone. (Claim: CLAIM-20260225-014)
 
 ### Medium-confidence constraints (do not treat as core truth without more validation)
 - “Point solution fatigue” numbers and market counts from blog-level secondary sources. (Claims: CLAIM-20260224-022, CLAIM-20260224-023)
@@ -73,7 +72,7 @@ This is the “truthy” journey scaffold to design the product around:
 - Stigma/dismissal pressure, appointment logistics, “normal” tests, affordability impact persistence and next actions. (Claim: CLAIM-20260224-009)
 
 5) Documentation and continuity problem
-- App-based records access is growing; fragmentation is common; consolidation behavior is rare. (Claims: CLAIM-20260224-011, CLAIM-20260224-012)
+- In Italy, records/SSN services access is structured around FSE 2.0 and targets nationwide interoperability across Regions. (Claims: CLAIM-20260225-011, CLAIM-20260225-012)
 
 6) Clinician handoff opportunity
 - Clinician-ready artifacts + structured outputs can reduce diagnostic delay; this is a core value lever. (Claim: CLAIM-20260224-014)
@@ -106,8 +105,8 @@ Each persona is a decision model. These are the “cards” teams should use wit
 
 2) Community-Dependent Seeker
 - JTBD: find credible explanations by comparing experiences, especially under slow/dismissive pathways. (Claims: CLAIM-20260224-001, CLAIM-20260224-002)
-- What blocks them: stigma/legitimacy burden and fragmented records. (Claims: CLAIM-20260224-010, CLAIM-20260224-011)
-- What they will adopt: validation-forward language and continuity support across episodes. (Claims: CLAIM-20260224-003, CLAIM-20260224-011)
+- What blocks them: stigma/legitimacy burden and system friction that stalls progress. (Claims: CLAIM-20260224-010, CLAIM-20260224-009)
+- What they will adopt: validation-forward language and clinician-shareable continuity artifacts. (Claims: CLAIM-20260224-003, CLAIM-20260224-014)
 
 3) Anxious Reassurance Seeker
 - JTBD: reassurance + calibrated plan when symptoms appear, without worst-case spirals. (Claims: CLAIM-20260224-004, CLAIM-20260224-008)
@@ -120,10 +119,10 @@ Each persona is a decision model. These are the “cards” teams should use wit
 - What they will adopt: clinician-usable artifacts that reduce repetition and accelerate recognition. (Claim: CLAIM-20260224-014)
 
 Persona set (files):
-- `methodology/persona_db/04_personas/patient_unknown_symptom/PERSONA-patient_unknown_symptom-001-evidence-driven-navigator.md`
-- `methodology/persona_db/04_personas/patient_unknown_symptom/PERSONA-patient_unknown_symptom-002-community-dependent-seeker.md`
-- `methodology/persona_db/04_personas/patient_unknown_symptom/PERSONA-patient_unknown_symptom-003-anxious-reassurance-seeker.md`
-- `methodology/persona_db/04_personas/patient_unknown_symptom/PERSONA-patient_unknown_symptom-004-legitimacy-fatigue-survivor.md`
+- `analysis/persona_db/04_personas/patient_unknown_symptom/PERSONA-patient_unknown_symptom-001-evidence-driven-navigator.md`
+- `analysis/persona_db/04_personas/patient_unknown_symptom/PERSONA-patient_unknown_symptom-002-community-dependent-seeker.md`
+- `analysis/persona_db/04_personas/patient_unknown_symptom/PERSONA-patient_unknown_symptom-003-anxious-reassurance-seeker.md`
+- `analysis/persona_db/04_personas/patient_unknown_symptom/PERSONA-patient_unknown_symptom-004-legitimacy-fatigue-survivor.md`
 
 ### 4.5 Patient-side product epics (downstream requirements)
 
@@ -141,95 +140,79 @@ Epic P3: “Calibrated next steps” guidance
 - Must: avoid anxiety amplification patterns. (Claim: CLAIM-20260224-008)
 
 Epic P4: Records continuity (careful)
-- Context: portals/apps are used increasingly, but aggregation use is low; fragmentation persists. (Claims: CLAIM-20260224-011, CLAIM-20260224-012)
+- Context: in Italy, records/SSN services access is structured around FSE 2.0 with explicit nationwide interoperability goals. (Claims: CLAIM-20260225-011, CLAIM-20260225-012)
 - Product implication (inferred): consolidation must be designed for trust and low effort, or it will not be used.
 
 ## 5) Insurer Cohort: What to Build/Sell/Operate For (insurer)
 
+Note: in Italy/SSN scope, this cohort represents procurement and governance stakeholders rather than US-style private payers.
+
 ### 5.1 Canonical buyer journey model (DO)
 
-1) Evidence gate
-- Measurable clinical + economic outcomes are required; engagement metrics are insufficient. (Claim: CLAIM-20260224-016)
+1) HTA / appraisal gate
+- Policy and procurement decisions are supported by national HTA appraisal processes and recommendations (PNHTA-DM). (Claim: CLAIM-20260225-013)
 
-2) Auditability gate
-- Purchasers distrust vendor-built ROI models and say they can’t validate assumptions internally. (Claim: CLAIM-20260224-020)
+2) Evaluation and measurement gate (especially for AI/DTx)
+- Evaluation requires outcome measurement criteria and privacy-compliant health-data utilization. (Claim: CLAIM-20260225-015)
 
-3) Contract posture gate
-- Performance-based contracting is used/planned; payment tied to outcomes. (Claim: CLAIM-20260224-018)
-
-4) Compliance/workflow gate
-- Regulatory requirements force payer API modernization and prior auth workflow constraints. (Claims: CLAIM-20260224-025, CLAIM-20260224-026)
-
-5) Governance gate (especially for AI)
-- AI in utilization review/prior auth requires governance to avoid harms and unjust denial patterns. (Claims: CLAIM-20260224-027, CLAIM-20260224-028)
+3) Interoperability and data backbone gate
+- Interoperability constraints are set by the national EDS and its interaction with FSE and national systems. (Claim: CLAIM-20260225-014)
 
 ### 5.2 Insurer SAY themes (language you must sell to)
-- “Outcomes, not engagement.” (Claim: CLAIM-20260224-016)
-- “We can’t validate vendor ROI assumptions internally.” (Claim: CLAIM-20260224-020)
-- “PBC is expected.” (Claim: CLAIM-20260224-030)
+- "HTA-ready evidence dossier" (not marketing claims). (Claim: CLAIM-20260225-013)
+- "Outcome measurement + privacy compliance" (not engagement-only narratives). (Claim: CLAIM-20260225-015)
+- "Interoperable with FSE/EDS" (works across Regions; integrates with national backbone). (Claim: CLAIM-20260225-014)
 
 ### 5.3 Insurer Kano priorities (Kano)
 Basics
-- Compliance fit: required payer APIs and prior auth operational requirements. (Claims: CLAIM-20260224-025, CLAIM-20260224-026)
-- AI governance expectations to prevent harm modes. (Claim: CLAIM-20260224-028)
+- Procurement/HTA fit: credible appraisal framing and recommendation-ready evidence package. (Claim: CLAIM-20260225-013)
+- Interoperability fit: alignment with EDS/FSE integration constraints. (Claim: CLAIM-20260225-014)
 
 Performance
-- ROI auditability and validation workflows. (Claim: CLAIM-20260224-020)
-- Outcome measurement oriented to clinical + financial metrics. (Claim: CLAIM-20260224-019)
+- Outcome measurement design and privacy-compliant data use. (Claim: CLAIM-20260225-015)
 
 Delighters
-- Admin burden reduction without increasing harms or compliance risk. (Claim: CLAIM-20260224-028)
+- Reduced integration burden while maintaining interoperability and measurement rigor. (Claims: CLAIM-20260225-014, CLAIM-20260225-015)
 
 ### 5.4 Insurer personas (quick cards)
 
-1) Evidence Assurance Analyst
-- JTBD: reduce purchase risk via evidence quality and auditability. (Claims: CLAIM-20260224-016, CLAIM-20260224-020)
-- Adopts: transparent measurement, validation paths, and governance narratives. (Claims: CLAIM-20260224-020, CLAIM-20260224-028)
+1) Evidence Assurance Analyst (Italy/SSN procurement)
+- JTBD: reduce adoption risk by producing HTA-ready evidence and traceability. (Claims: CLAIM-20260225-013, CLAIM-20260225-015)
 
-2) ROI Governance Executive
-- JTBD: invest while proving ROI and reducing reputational/regulatory risk. (Claims: CLAIM-20260224-024, CLAIM-20260224-027)
-- Adopts: PBC-ready outcome reporting + governance. (Claims: CLAIM-20260224-018, CLAIM-20260224-027)
+2) Governance Executive (Region/ASL)
+- JTBD: adopt solutions that can be justified as policy/procurement decisions and measured credibly. (Claims: CLAIM-20260225-013, CLAIM-20260225-015)
 
-3) Pilot-Forward Product Owner
-- JTBD: move fast without creating integration fragmentation (“point solution fatigue”). (Claim: CLAIM-20260224-022)
-- Adopts: implementation feasibility + clear success criteria tied to outcomes. (Claims: CLAIM-20260224-016, CLAIM-20260224-018)
+3) Pilot-Forward Product Owner (public digital health program)
+- JTBD: run pilots that are interoperable with the national backbone and can scale across Regions. (Claim: CLAIM-20260225-014)
 
-4) Workflow-Protecting Ops Manager
-- JTBD: keep prior auth and compliance workflows stable while reducing administrative burden. (Claims: CLAIM-20260224-026, CLAIM-20260224-021)
-- Adopts: compliance-aligned workflow tools + governance guardrails. (Claims: CLAIM-20260224-025, CLAIM-20260224-027)
+4) Workflow-Protecting Ops Manager (integration)
+- JTBD: keep operations stable while meeting interoperability and data-governance constraints. (Claims: CLAIM-20260225-014, CLAIM-20260225-015)
 
 Persona set (files):
-- `methodology/persona_db/04_personas/insurer/PERSONA-insurer-001-evidence-assurance-analyst.md`
-- `methodology/persona_db/04_personas/insurer/PERSONA-insurer-002-roi-governance-executive.md`
-- `methodology/persona_db/04_personas/insurer/PERSONA-insurer-003-pilot-forward-product-owner.md`
-- `methodology/persona_db/04_personas/insurer/PERSONA-insurer-004-workflow-protecting-ops-manager.md`
+- `analysis/persona_db/04_personas/insurer/PERSONA-insurer-001-evidence-assurance-analyst.md`
+- `analysis/persona_db/04_personas/insurer/PERSONA-insurer-002-roi-governance-executive.md`
+- `analysis/persona_db/04_personas/insurer/PERSONA-insurer-003-pilot-forward-product-owner.md`
+- `analysis/persona_db/04_personas/insurer/PERSONA-insurer-004-workflow-protecting-ops-manager.md`
 
 ### 5.5 Insurer-facing product epics (downstream requirements)
 
-Epic I1: Outcomes evidence + measurement system
-- Must: produce measurable clinical + economic outcomes, not engagement-only. (Claim: CLAIM-20260224-016)
-- Must: align reporting to clinical + financial outcomes. (Claim: CLAIM-20260224-019)
+Epic I1: HTA-ready evidence package
+- Must: provide evidence artifacts that support appraisal and procurement recommendations. (Claim: CLAIM-20260225-013)
 
-Epic I2: Auditability and validation
-- Must: enable purchasers to validate assumptions; reduce vendor-ROI distrust. (Claim: CLAIM-20260224-020)
+Epic I2: Outcome measurement + privacy compliance
+- Must: include outcome measurement design and privacy-compliant health-data utilization criteria. (Claim: CLAIM-20260225-015)
 
-Epic I3: PBC readiness
-- Must: support outcome-linked contracting and measurement. (Claim: CLAIM-20260224-018)
-
-Epic I4: Compliance/workflow fit
-- Must: align with payer interoperability requirements and prior authorization process expectations. (Claims: CLAIM-20260224-025, CLAIM-20260224-026)
-
-Epic I5: Governance for AI-supported decisions
-- Must: include monitoring and safeguards for harm modes in utilization review/prior auth. (Claims: CLAIM-20260224-027, CLAIM-20260224-028)
+Epic I3: Interoperability with national backbone
+- Must: align with EDS/FSE integration constraints and cross-Region interoperability expectations. (Claim: CLAIM-20260225-014)
 
 ## 6) Integrated Product Strategy (Two-Sided Reality)
 
 This is a two-sided product constraint:
 - Patient value is “uncertainty reduction + legitimacy + clinician-usable communication.” (Claims: CLAIM-20260224-003, CLAIM-20260224-010, CLAIM-20260224-014)
-- Insurer value is “outcomes + auditability + workflow fit + governance.” (Claims: CLAIM-20260224-016, CLAIM-20260224-020, CLAIM-20260224-026, CLAIM-20260224-028)
+- Insurer value is “HTA-ready evidence + measurable outcomes + interoperability fit.” (Claims: CLAIM-20260225-013, CLAIM-20260225-015, CLAIM-20260225-014)
 
 Practical implication:
-- Anything that improves patient experience but cannot be measured credibly (or cannot integrate/govern) is unlikely to be adopted at scale. (Claim basis: CLAIM-20260224-016)
+- Anything that improves patient experience but cannot be measured credibly (or cannot align with interoperability and privacy constraints) is unlikely to be adopted at scale. (Claim basis: CLAIM-20260225-015)
 
 ## 7) Experiment and Validation Backlog (What to Test Next)
 
@@ -247,36 +230,35 @@ Practical implication:
 - Evidence driver: clinician-ready artifacts are positioned to combat diagnostic delays. (Claim: CLAIM-20260224-014)
 
 ### Insurer experiments (priority)
-1) Outcomes measurement feasibility
-- Goal: can we define measurable clinical + economic outcomes that match purchaser expectations?
-- Evidence driver: outcomes gate. (Claim: CLAIM-20260224-016)
+1) HTA-ready evidence package check
+- Goal: do our evidence artifacts map cleanly to HTA appraisal and procurement recommendation needs?
+- Evidence driver: HTA appraisal processes and recommendations support policy/procurement decisions. (Claim: CLAIM-20260225-013)
 
-2) Auditability workflow
-- Goal: can a buyer validate key ROI assumptions using available data?
-- Evidence driver: vendor ROI distrust / inability to validate. (Claim: CLAIM-20260224-020)
+2) Outcome measurement + privacy compliance feasibility
+- Goal: can we define outcome measures and data access/processing safeguards that meet evaluation expectations?
+- Evidence driver: outcome measurement and privacy-compliant health-data utilization criteria. (Claim: CLAIM-20260225-015)
 
-3) Governance expectations check
-- Goal: does the governance story and monitoring meet insurer risk posture?
-- Evidence driver: governance needed for AI-supported decisions. (Claim: CLAIM-20260224-027)
+3) Interoperability feasibility
+- Goal: can we integrate with Italy's national backbone constraints (EDS/FSE) and scale cross-Region?
+- Evidence driver: EDS as interoperability/data backbone interacting with FSE and national systems. (Claim: CLAIM-20260225-014)
 
 ## 8) Risks and Open Questions (Explicit)
 
 ### Evidence coverage risks
-- Insurer evidence currently includes US regulatory context (CMS) and may need localization if the product is targeting a different geography. (Claims: CLAIM-20260224-025, CLAIM-20260224-026)
+- Some legacy insurer artifacts in `analysis/persona_db/` were originally built with out-of-scope (non-Italy) evidence and must not be used for Italy/SSN decisions.
 
 ### Product risks
 - Over-alarming guidance can increase anxiety and reduce trust/adoption for an important segment. (Claim: CLAIM-20260224-008)
-- Record consolidation has low baseline adoption; if this becomes a core feature it must be trust- and effort-optimized. (Claim: CLAIM-20260224-012)
+- Cross-Region interoperability is an explicit program goal; if record consolidation becomes a core feature it must align with FSE/EDS constraints and be effort-optimized. (Claim: CLAIM-20260225-012)
 
 ### Open questions to validate (top)
 - Which patient friction points dominate in the target market: logistics, stigma, affordability, or “normal results” interpretation? (Claim basis: CLAIM-20260224-009)
-- What minimum evidence package (clinical + economic) is sufficient for the insurer buyer committee in the target geography? (Claim basis: CLAIM-20260224-016)
-- What buyer-side validation workflows are feasible given limited internal capacity? (Claim: CLAIM-20260224-020)
+- What minimum evidence package is sufficient for Italy/SSN procurement and HTA stakeholders (AGENAS/Regions/ASL)? (Claim basis: CLAIM-20260225-013)
+- What outcome measurement + privacy compliance package is feasible given available data and constraints? (Claim basis: CLAIM-20260225-015)
 
 ## 9) What Not To Do (Anti-Patterns)
 
-- Do not treat engagement metrics as the primary proof of value to payers. (Claim: CLAIM-20260224-016)
-- Do not treat “more AI” as inherently a delighter; governance and harm modes are first-order constraints. (Claims: CLAIM-20260224-028, CLAIM-20260224-027)
+- Do not treat engagement metrics as the primary proof of value to procurement/governance stakeholders; outcome measurement and privacy compliance are first-order requirements. (Claim: CLAIM-20260225-015)
 - Do not present one-size-fits-all escalation guidance; anxiety amplification is a known risk. (Claim: CLAIM-20260224-008)
 
 ## 10) Recommended Evidence Expansions (Next Iteration)
@@ -285,10 +267,10 @@ These items are recommended to make the analysis more complete and/or better loc
 
 ### If the product targets Italy/SSN (DeepWiki context)
 - Add Italy/SSN system constraint sources as first-class evidence (waiting times, outcomes, regional variance): PNGLA, PNE, LEA/NSG, SDO, ISTAT EHIS.
-- Redefine/replace the current `insurer` cohort (US CMS-centric) with a public/SSN purchaser/governance cohort and rebuild the purchaser claim set accordingly.
+- Complete the insurer cohort rebuild by removing legacy out-of-scope claims and grounding procurement/governance logic in Italy sources (AGENAS/Ministero/AgID/EHDS/Garante).
 
 ### Patient journey enrichment
 - Add condition complexity/scoring sources (e.g., Orphanet, Italian pathway documentation) to ground “how many specialists” and “in what sequence” for complex pathways.
 
 ### Documentation for this expansion
-- See `methodology/potential_extra_data_analysis.md` for the DeepWiki-derived opportunities and suggested integrations.
+- See `analysis/potential_extra_data_analysis.md` for the DeepWiki-derived opportunities and suggested integrations.

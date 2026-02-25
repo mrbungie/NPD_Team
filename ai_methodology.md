@@ -17,21 +17,24 @@ If your "evidence" is only internal docs like `STRUCTURE.md` or generic UX/frame
 ## Deliverables (What you must produce)
 You must produce and keep consistent:
 
-1. Evidence records
+1. Pre-gathering interview method tool
+- `analysis/persona_db/03_framework_runs/interviews/interview_method_tool.md`
+
+2. Evidence records
 - `analysis/persona_db/01_sources/SOURCE-*.md`
 - `analysis/persona_db/02_claims/CLAIM-*.md`
 
-2. Framework applications
+3. Framework applications
 - `analysis/persona_db/03_framework_runs/do/**/RUN-*.md`
 - `analysis/persona_db/03_framework_runs/say/**/RUN-*.md`
 - `analysis/persona_db/03_framework_runs/kawakita/**/RUN-*.md`
 - `analysis/persona_db/03_framework_runs/value/**/RUN-*.md` (Kano)
 
-3. Personas
+4. Personas
 - `analysis/persona_db/04_personas/insurer/PERSONA-*.md`
 - `analysis/persona_db/04_personas/patient_unknown_symptom/PERSONA-*.md`
 
-4. Synthesis
+5. Synthesis
 - `analysis/persona_db/05_synthesis/synthesis-insurer.md`
 - `analysis/persona_db/05_synthesis/synthesis-patient_unknown_symptom.md`
 - `analysis/persona_db/05_synthesis/clusters/CLUSTER-*.md`
@@ -73,13 +76,16 @@ Typical journey characteristics:
 - Peer similarity seeking and legitimacy concerns can be central.
 
 ### Cohort B: `insurer`
-Health insurers / payers and their internal roles involved in adopting solutions.
+Italian payer and health-system decision stakeholders (public and private) and their internal roles involved in adopting solutions.
 
 Typical journey characteristics:
 - Structured purchasing and review cycles.
 - Outcomes proof and auditability requirements.
-- Compliance constraints (FHIR APIs; prior authorization workflows).
+- Compliance constraints in Italian/EU context (SSN and regional workflows, GDPR/EU health-data interoperability requirements).
 - Risk governance for AI used in utilization review.
+
+Localization rule:
+- This project is Italy-focused. Use Italy/EU evidence as primary. Treat US-only policy sources as non-authoritative for final claims.
 
 ---
 
@@ -91,7 +97,7 @@ Evidence must be external to this repo.
 
 HIGH confidence (use whenever possible):
 - Peer-reviewed articles (PubMed / PMC)
-- Government publications and regulations (CMS, ASTP/ONC)
+- Government publications and regulations (Ministero della Salute, AGENAS, ISS, ISTAT, Gazzetta Ufficiale, EU regulations)
 - Large-N surveys (>= 300) with clear methodology
 
 MEDIUM confidence:
@@ -112,9 +118,9 @@ Patients:
 - Diagnostic delay / odyssey framing (peer-reviewed; preprints)
 
 Insurers:
-- Purchaser evidence requirements and contract trends (PHTI)
-- Regulation driving payer interoperability and prior auth (CMS)
-- Governance risks in AI-supported insurance decisions (Stanford HAI)
+- Italian procurement and commissioning evidence requirements (national/regional health authorities, procurement guidance)
+- Regulation driving interoperability and authorization workflows in Italy/EU
+- Governance risks in AI-supported health decision systems in EU/Italy context
 
 ---
 
@@ -151,7 +157,26 @@ If you cannot tag it, you cannot write it.
 
 ---
 
-## 6) Operational Workflow (Source -> Claim -> Run -> Persona)
+## 6) Operational Workflow (Interview Tool -> Source -> Claim -> Run -> Persona)
+
+### Step 6.0: Build the interview method tool just before conducting interviews
+Just before conducting interviews for a cohort, define (or update) the interview method tool in `analysis/persona_db/03_framework_runs/interviews/interview_method_tool.md`.
+
+Required setup:
+- cohort lock (`insurer` or `patient_unknown_symptom`)
+- interview objective and survey question set
+- bias and quality guardrails
+- synthetic answer generation rules and traceability fields
+- mixed response format: structured data answers + free-text interview answers
+
+Survey requirement:
+- Use the cohort-specific instrument referenced by the tool file.
+- Each answer row must include `question_id`, `question_type`, `claim_refs`, and `source_refs`.
+- Each interview answer must include respondent profile with at least `age`, `region`, and `role`.
+
+Non-negotiable:
+- You must clearly label outputs as interviews.
+- If answers are generated from evidence (not direct respondents), label them as synthetic interview answers.
 
 ### Step 6.1: Ingest sources into `01_sources/`
 Create one `SOURCE-*` file per external artifact.
@@ -162,6 +187,7 @@ Minimum fields:
 Guidance:
 - Evidence snippet should be a direct quote when possible.
 - Put scope caveats in `usage_notes` (e.g., pediatric parents -> adult generalization is limited).
+- For interview-style source records, include whether it is direct interview evidence or synthetic interview answers generated with the interview method tool.
 
 ### Step 6.2: Write atomic claims into `02_claims/`
 Claims must be:
@@ -216,8 +242,8 @@ Patient DO examples (do not invent numbers):
 - People use online communities for information- and support-seeking when uncertain. (Source: `SOURCE-20260224-002`)
 
 Insurer DO examples:
-- Purchasing patterns from PHTI survey and review cycles. (Source: `SOURCE-20260224-008`)
-- CMS mandates payer FHIR APIs and prior auth workflow constraints. (Source: `SOURCE-20260224-014`)
+- HTA appraisal processes and recommendations support policy and procurement decisions (PNHTA-DM). (Source: `SOURCE-20260225-006`)
+- National interoperability backbone constraints exist via EDS and its interaction with FSE and national systems. (Source: `SOURCE-20260225-013`)
 
 ### 7.2 SAY protocol (Language)
 What you are extracting:
@@ -233,8 +259,8 @@ Patient SAY examples:
 - Legitimacy and stigma framing ("None of us are lying"). (Source: `SOURCE-20260224-005`)
 
 Insurer SAY examples:
-- Outcomes proof gating (clinical + economic outcomes over engagement). (Source: `SOURCE-20260224-008`)
-- Skepticism about vendor-built ROI and ability to validate. (Source: `SOURCE-20260224-009`)
+- Outcomes proof gating (clinical + economic outcomes over engagement).
+- Outcome measurement criteria and privacy-compliant health-data utilization expectations (especially for AI/DTx). (Source: `SOURCE-20260225-007`)
 
 ### 7.3 VALUE protocol (Kano)
 What you are extracting:
@@ -354,13 +380,15 @@ Patients:
 - `SOURCE-20260224-003` (BMC 2024 predictor of symptom checker use)
 - `SOURCE-20260224-002` (PMC 2022 crowdsourced medicine on Reddit)
 - `SOURCE-20260224-005` (BMC Health Serv Res 2023 legitimacy/access barriers)
-- `SOURCE-20260224-007` (ASTP/ONC portal/app usage)
+- `SOURCE-20260225-011` (Ministero della Salute FSE 2.0 overview)
+- `SOURCE-20260225-012` (Developers Italia FSE 2.0 objectives + architecture)
 
 Insurers:
-- `SOURCE-20260224-008` (PHTI 2025 purchasing survey)
-- `SOURCE-20260224-009` (PHTI 2026 performance-based contracting playbook)
-- `SOURCE-20260224-010` (Stanford HAI 2026 AI governance)
-- `SOURCE-20260224-014` (CMS 2024 interoperability/prior auth rule fact sheet)
+- Minimum required Italy/SSN source set should cover procurement/HTA governance, interoperability backbone constraints (FSE/EDS), and AI/DTx evaluation expectations.
+- Examples already present in this repo:
+  - `SOURCE-20260225-006` (AGENAS PNHTA-DM)
+  - `SOURCE-20260225-007` (AGENAS AI/DTx HTA evaluation framework)
+  - `SOURCE-20260225-013` (AGENAS EDS overview)
 
 ---
 

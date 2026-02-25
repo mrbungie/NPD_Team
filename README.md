@@ -4,8 +4,10 @@ This repository contains the evidence-grounded synthetic persona workflow for tw
 - `insurer`
 - `patient_unknown_symptom`
 
+Geographic focus: Italy (SSN and regional healthcare context).
+
 The authoritative data pipeline lives under `analysis/persona_db` and follows the sequence:
-sources -> claims -> framework runs -> personas -> synthesis -> audit.
+interview method tool -> sources/interviews -> claims -> framework runs -> personas -> synthesis -> audit.
 
 ## Repository Structure
 
@@ -50,7 +52,7 @@ sources -> claims -> framework runs -> personas -> synthesis -> audit.
 ## Key Directories
 
 - `analysis/persona_db/00_rules`: governance rules, naming constraints, and templates.
-- `analysis/persona_db/01_sources`: external evidence records (`SOURCE-*`).
+- `analysis/persona_db/01_sources`: external evidence records and interview-source artifacts (`SOURCE-*`).
 - `analysis/persona_db/02_claims`: atomic, cohort-scoped claims (`CLAIM-*`).
 - `analysis/persona_db/03_framework_runs`: DO/SAY/Kawakita/Kano processing runs (`RUN-*`).
 - `analysis/persona_db/04_personas`: synthesized personas per cohort (`PERSONA-*`).
@@ -68,3 +70,13 @@ sources -> claims -> framework runs -> personas -> synthesis -> audit.
 - `ai_methodology.md` is the operational guide for producing and validating persona artifacts.
 - `methodology_translated.md` and files in `methodology_sources/` provide source methodology context.
 - `.sisyphus/` contains planning and execution notes used during development.
+
+## Interview Workflow Clarification
+
+- Interviews are treated as first-class evidence inputs in this repository.
+- The team builds a methodological interview tool just before conducting interviews (`analysis/persona_db/03_framework_runs/interviews/interview_method_tool.md`), then runs gathering.
+- The interview tool is survey-based and cohort-specific (`INS-PUS-v1` and `INS-INSURER-v1`) with mixed response types (structured data + free text).
+- Interview records require respondent profile metadata (including age, region, and role).
+- When answers are generated from existing evidence rather than live respondents, they are explicitly labeled as synthetic interview answers.
+- Interview answer documents must follow the instrument question IDs and include traceability fields (`claim_refs`, `source_refs`).
+- Existing interview content is preserved; process updates only clarify ordering, traceability, and labeling.

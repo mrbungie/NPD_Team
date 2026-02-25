@@ -4,6 +4,8 @@
 
 This methodology provides a structured approach to researching and designing for two distinct target cohorts that our health app serves. The DO/SAY/VALUE framework is not just a theoretical model; it is applied directly to these real-world populations to understand their unique needs, behaviors, and decision-making processes.
 
+Geographic scope: Italy. Research and interview interpretation must be grounded in Italian healthcare context (SSN and regional systems) and applicable EU regulation.
+
 ### Target Cohorts
 
 **1. Patients with Unknown or Unexplained Symptoms**
@@ -18,7 +20,7 @@ By applying this methodology to these cohorts, we ensure that our product decisi
 
 ---
 
-Source files from `methodology/`:
+Source files from `methodology_sources/`:
 - `Captura de pantalla 2026-02-18 a la(s) 15.49.17.png`
 - `Captura de pantalla 2026-02-18 a la(s) 15.49.22.png`
 - `Captura de pantalla 2026-02-18 a la(s) 15.49.44.png`
@@ -250,6 +252,31 @@ Select the architecture that best fits your strategic decision:
 Rule of thumb:
 - Start with 3-5 personas; more often signals segmentation needs rather than persona clarity.
 
+### Step 3.5: Build the interview method tool just before conducting interviews
+
+Just before conducting interviews for a cohort, define (or revise) a methodological interview tool.
+
+Required tool elements:
+- Cohort lock (`insurer` or `patient_unknown_symptom`)
+- Interview objective and cohort-specific survey instrument
+- Bias guardrails (no leading prompts, no stereotype logic)
+- Output contract with explicit interview labeling
+
+Person profile requirement (mandatory for each interview):
+- age
+- region (Italy)
+- role
+- cohort-specific context field
+
+Instrument requirement:
+- `patient_unknown_symptom` must use `INS-PUS-v1`.
+- `insurer` must use `INS-INSURER-v1`.
+- The instrument must include mixed question types:
+  - structured data questions (single-choice, multi-choice, rating scale, numeric)
+  - free-text interview questions
+
+If interviews are generated from evidence rather than live respondents, the output must be labeled as synthetic interview answers.
+
 ### Step 4: Gather inputs (real or proxy evidence)
 
 Even synthetic personas should be evidence-informed. Model observed patterns; do not invent users.
@@ -263,6 +290,12 @@ If no data is available, run a starter evidence sprint:
 - Analyze 10-20 reviews per brand (yours and competitors)
 - Conduct 5 short interviews (15 minutes each) or one open-ended micro-survey
 - Pull basic funnel metrics showing top drop-off points
+
+Interview execution rule:
+- Apply the Step 3.5 interview method tool during gathering.
+- Keep interview outputs clearly marked as interviews.
+- If generated from evidence, mark as synthetic interview answers and map each answer to source-backed claims.
+- Ensure each response includes `question_id`, `question_type`, `claim_refs`, and `source_refs`.
 
 Deliverable:
 - One-page insight inventory organized by recurring cross-source patterns.
@@ -400,31 +433,31 @@ We categorize potential features based on their impact on patient satisfaction a
 
 ---
 
-### 7.2) Cohort 2: Health Insurers (Payers)
+### 7.2) Cohort 2: Italy/SSN Procurement and Governance Stakeholders
 
-Insurers evaluate digital health solutions through the lens of risk mitigation, Medical Loss Ratio (MLR) improvement, and operational efficiency. They are wary of "point solution fatigue" and demand high levels of evidence.
+Italian payer and health-system stakeholders evaluate digital health solutions through the lens of risk mitigation, budget impact, and operational efficiency. They are wary of "point solution fatigue" and demand high levels of evidence.
 
 #### **DO: Behavioral Reality (Implicit Observation)**
 We map the institutional behaviors and procurement cycles of insurance decision-makers:
 - **Rigorous Procurement Workflows:** They run multi-month (often 6-18 months) procurement cycles that involve legal, security, and clinical risk assessments.
-- **Adherence to Evidence Frameworks:** They use standardized rubrics like the PHTI's "Evidence DEFINED" framework to judge whether a solution provides actual clinical value.
-- **API and Integration Mandates:** They mandate FHIR (Fast Healthcare Interoperability Resources) and HL7 standards. If a solution doesn't plug into their existing data lake, it is a non-starter.
-- **Vendor Risk Management:** They spend significant time auditing a vendor's SOC2 Type II, HIPAA compliance, and data privacy policies before any clinical discussion occurs.
+- **Adherence to Evidence Frameworks:** They use national HTA appraisal processes and evaluation frameworks (e.g., AGENAS PNHTA-DM; AI/DTx HTA frameworks) to judge whether a solution provides clinical value and is feasible to adopt.
+- **API and Integration Mandates:** They require interoperability with Italian/EU-aligned standards and existing regional/national data infrastructure.
+- **Vendor Risk Management:** They spend significant time auditing GDPR compliance, security posture, and data governance policies before any clinical discussion occurs.
 
 #### **SAY: Stated and Emerging Needs (Explicit Communication)**
 We listen for the objections and ROI-driven language used in boardrooms and procurement meetings:
 - **Point Solution Fatigue:** "We have 14,000 digital health ventures knocking on our door. We cannot manage another siloed app."
-- **Hard ROI Focus:** "Engagement metrics like 'daily active users' are nice, but show me the hard ROI. I need to see MLR (Medical Loss Ratio) or COR (Cost of Revenue) data."
+- **Hard ROI Focus:** "Engagement metrics are not enough; show measurable clinical and economic impact in our operating context."
 - **Non-Negotiable Validation:** "Clinical validation is our first gate. If you don't have peer-reviewed data or a proven clinical outcome from a previous pilot, we can't move forward."
 - **Integration Concerns:** "We don't want another login. It has to be zero-lift for our members and our staff."
 
 #### **VALUE: Prioritization (Kano Classification)**
 We prioritize enterprise features based on the insurer's decision-making hierarchy:
-- **Must-Haves (Basic Expectations):** Full SOC2, HIPAA, and FHIR compliance. These are "table stakes" for entering the insurance market.
+- **Must-Haves (Basic Expectations):** Full GDPR compliance, strong security controls, and interoperability fit for Italian/EU healthcare systems. These are "table stakes" for entering this market.
 - **Performance Attributes (Competitive):** Verified ROI and medical savings data. Insurers value a vendor who can prove they reduce hospital readmissions or ER visits for high-risk patients.
 - **Surprises and Delighters (Exciting Quality):**
-  - **Zero-Lift Connectors:** Native integrations for Epic, Cerner, or Salesforce Health Cloud that allow their staff to see app data without leaving their primary interface.
-  - **Member NPS Lift:** Demonstrable improvement in member satisfaction scores that help the insurer with retention and Star Ratings.
+  - **Zero-Lift Connectors:** Integrations that fit existing Italian/EU-aligned health data systems and minimize workflow disruption.
+  - **Service Quality Lift:** Demonstrable improvement in service quality measures (access, continuity, satisfaction) that matter in the Italian context.
 
 #### **Key Insurer Segmentations by Role:**
 - **The Analyst:** Primarily concerned with data accuracy, auditability, and technical specifications. They want to know "how it works" under the hood.
