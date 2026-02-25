@@ -18,6 +18,13 @@ This document is an interview record.
 
 ## Responses
 
+
+### Q: INS-Q00
+- question_type: profile
+- answer: age: 45; region: Lombardia; role: procurement_manager; cohort_specific_context: organization_type regional_health_authority; years_in_role 8
+- source_refs:
+  - SOURCE-20260225-023
+
 ### Q: INS-Q01
 - question_type: single_choice
 - answer: clinical_outcomes
@@ -34,7 +41,7 @@ This document is an interview record.
 
 ### Q: INS-Q03
 - question_type: rating_scale 1-5
-- answer: (not captured in this interview)
+- answer: not_captured
 - source_refs:
   - SOURCE-20260225-023
 
@@ -71,7 +78,7 @@ This document is an interview record.
 
 ### Q: INS-Q08
 - question_type: numeric
-- answer: (not captured in this interview)
+- answer: not_captured
 - source_refs:
   - SOURCE-20260225-023
 
@@ -93,7 +100,7 @@ This document is an interview record.
 
 ### Q: INS-Q11
 - question_type: rating_scale 0-10
-- answer: (not captured in this interview)
+- answer: not_captured
 - source_refs:
   - SOURCE-20260225-023
 
@@ -107,7 +114,7 @@ This document is an interview record.
 
 ### Q: INS-Q13
 - question_type: numeric
-- answer: (not captured in this interview)
+- answer: not_captured
 - source_refs:
   - SOURCE-20260225-023
 
