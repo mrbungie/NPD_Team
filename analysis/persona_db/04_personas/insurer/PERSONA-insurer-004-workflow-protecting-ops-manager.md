@@ -11,47 +11,43 @@ derived_from_runs:
 cluster_refs:
   - CLUSTER-insurer-002-operational-and-integration-burden
 claim_refs:
-  - CLAIM-20260224-021
-  - CLAIM-20260224-025
-  - CLAIM-20260224-026
-  - CLAIM-20260224-027
-  - CLAIM-20260224-022
+  - CLAIM-20260225-014
+  - CLAIM-20260225-015
+  - CLAIM-20260225-013
 ---
 
 # Persona: Workflow-Protecting Ops Manager
 
-> "Executing these contracts remains challenging... with limited capacity." (Claim: CLAIM-20260224-021)
+> "If integration doesn't fit the national backbone constraints, operations will break at scale." (Claim: CLAIM-20260225-014)
 
 ## Primary Job-to-be-Done
-Keep operations compliant and stable while reducing administrative burden in prior authorization and related workflows. (Claims: CLAIM-20260224-026, CLAIM-20260224-027)
+Keep operations stable while meeting interoperability and data governance constraints (EDS/FSE interaction; privacy-compliant data use). (Claims: CLAIM-20260225-014, CLAIM-20260225-015)
 
 ## Context of Use
-Operates under API modernization and prior auth operational requirements; adoption fails when it increases burden or fragments workflows. (Claims: CLAIM-20260224-025, CLAIM-20260224-022)
+Operates under interoperability and measurement/privacy expectations; adoption fails when integration is not feasible with EDS/FSE constraints or when governance is unclear. (Claims: CLAIM-20260225-014, CLAIM-20260225-015)
 
 ## Top 3 Motivations and Pain Points (SAY/DO)
-- **Motivation/Pain 1**: Limited capacity to negotiate/adjudicate complex contracts and reporting requirements. (Claim: CLAIM-20260224-021)
-- **Motivation/Pain 2**: Must hit regulatory obligations for FHIR APIs and prior auth requirements. (Claims: CLAIM-20260224-025, CLAIM-20260224-026)
-- **Motivation/Pain 3**: Worries automation introduces harm modes or escalates disputes/appeals burden. (Claim: CLAIM-20260224-027)
+- **Motivation/Pain 1**: Needs interoperability fit with EDS/FSE constraints to keep workflows stable. (Claim: CLAIM-20260225-014)
+- **Motivation/Pain 2**: Needs measurable outcomes and privacy-compliant data governance that can actually be implemented. (Claim: CLAIM-20260225-015)
+- **Motivation/Pain 3**: Needs procurement alignment so operational constraints are considered in appraisal and adoption. (Claim: CLAIM-20260225-013)
 
 ## Ranked Decision Criteria (SAY/VALUE)
-1. **Compliance fit**: Align with required APIs and prior auth process rules. (Claims: CLAIM-20260224-025, CLAIM-20260224-026)
-2. **Operational burden**: Reduce fragmentation and integration complexity (point solution fatigue drivers). (Claim: CLAIM-20260224-022)
-3. **Governance**: Prevent harms from AI-supported workflows; monitoring and accountability. (Claim: CLAIM-20260224-027)
+1. **Interoperability fit**: Alignment with EDS/FSE and national system constraints. (Claim: CLAIM-20260225-014)
+2. **Measurement + privacy**: Outcome measurement criteria and privacy-compliant data use expectations. (Claim: CLAIM-20260225-015)
+3. **HTA/procurement fit**: Evidence framing that supports procurement decisions and accounts for operational feasibility. (Claim: CLAIM-20260225-013)
 
 ## Barriers, Anxieties, and Triggers (DO)
-- **Barriers**: Integration complexity and training burden from disparate technologies. (Claim: CLAIM-20260224-022)
-- **Anxieties**: Wrongful denials and harm narratives from AI use in utilization review. (Claim: CLAIM-20260224-027)
-- **Triggers**: Regulatory compliance dates and reporting requirements. (Claim: CLAIM-20260224-026)
+- **Barriers**: Integration feasibility with the national backbone can block adoption. (Claim: CLAIM-20260225-014)
+- **Anxieties**: Privacy compliance failures create high operational and reputational risk. (Claim: CLAIM-20260225-015)
+- **Triggers**: Procurement decisions require appraisal-grade evidence readiness. (Claim: CLAIM-20260225-013)
 
 ## Preferred Channels and Touchpoints (DO)
-- Prior authorization workflows and compliance programs tied to API implementation. (Claims: CLAIM-20260224-025, CLAIM-20260224-026)
+- Integration programs tied to national backbone constraints (EDS/FSE interaction) and data governance. (Claims: CLAIM-20260225-014, CLAIM-20260225-015)
 
 ## Design Implications
-- **Messaging**: Emphasize burden reduction and compliance alignment, not just innovation. (Claims: CLAIM-20260224-022, CLAIM-20260224-025)
-- **Offer**: Provide implementation support that reduces contract/admin overhead. (Claim: CLAIM-20260224-021)
-- **UX/Service**: Support decision timeframes, denial reasons, and reporting. (Claim: CLAIM-20260224-026)
-- **Trust**: Embed governance and monitoring for AI-supported decisions. (Claim: CLAIM-20260224-027)
-- **Channel**: Integrate with FHIR API and prior auth modernization initiatives. (Claim: CLAIM-20260224-025)
+- **Messaging**: Emphasize interoperability fit (EDS/FSE) and measurable outcomes under compliant data governance. (Claims: CLAIM-20260225-014, CLAIM-20260225-015)
+- **Offer**: Provide implementation artifacts that make interoperability and governance feasible. (Claims: CLAIM-20260225-014, CLAIM-20260225-015)
+- **UX/Service**: Make integration constraints explicit and reduce operational surprises. (Claim: CLAIM-20260225-014)
 
 ---
 

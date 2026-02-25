@@ -17,14 +17,11 @@ prompt_fingerprint: grounded-kawakita-v1-20260224
 Cluster fragments into draft groups.
 
 ## Intermediate Output
-Cluster 1: Outcomes gating
-- Proof requirements; measurable results. (Claim: CLAIM-20260224-016)
+Cluster 1: HTA-ready evidence
+- Appraisal-grade evidence artifacts and recommendation framing. (Claim: CLAIM-20260225-013)
 
-Cluster 2: Auditability and distrust
-- Skepticism about vendor models; need validation. (Claim: CLAIM-20260224-020)
+Cluster 2: Measurement + privacy compliance
+- Outcome measurement criteria and privacy-compliant health-data utilization expectations. (Claim: CLAIM-20260225-015)
 
-Cluster 3: Operational burden / fatigue
-- Integration burden; point solution fatigue; cost/ROI concerns. (Claims: CLAIM-20260224-022, CLAIM-20260224-024)
-
-Cluster 4: Contract posture
-- Performance-based contracting expectations shape negotiation. (Claim: CLAIM-20260224-030)
+Cluster 3: Interoperability constraints
+- EDS/FSE interoperability as an adoption and scaling constraint. (Claim: CLAIM-20260225-014)

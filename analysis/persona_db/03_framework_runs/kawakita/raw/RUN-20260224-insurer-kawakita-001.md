@@ -17,8 +17,6 @@ prompt_fingerprint: grounded-kawakita-v1-20260224
 Create raw note fragments from insurer SAY themes.
 
 ## Raw Output
-- "We need clinical + economic outcomes, not engagement." (Claim: CLAIM-20260224-016)
-- "Vendor ROI models use assumptions; we cannot validate." (Claim: CLAIM-20260224-020)
-- "Technology hasn't reduced expenses yet." (Claim: CLAIM-20260224-024)
-- "We have point solution fatigue; integration is the problem." (Claim: CLAIM-20260224-022)
-- "PBC is table stakes." (Claim: CLAIM-20260224-030)
+- "We need an HTA-ready evidence dossier, not marketing claims." (Claim: CLAIM-20260225-013)
+- "Outcome measurement and privacy-compliant data use are non-negotiable." (Claim: CLAIM-20260225-015)
+- "If it's not interoperable with EDS/FSE, it won't scale across Regions." (Claim: CLAIM-20260225-014)

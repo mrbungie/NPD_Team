@@ -12,47 +12,43 @@ derived_from_runs:
 cluster_refs:
   - CLUSTER-insurer-002-operational-and-integration-burden
 claim_refs:
-  - CLAIM-20260224-017
-  - CLAIM-20260224-022
-  - CLAIM-20260224-023
-  - CLAIM-20260224-018
-  - CLAIM-20260224-016
+  - CLAIM-20260225-013
+  - CLAIM-20260225-014
+  - CLAIM-20260225-015
 ---
 
 # Persona: Pilot-Forward Product Owner
 
-> "We need measurable clinical and economic outcomes, not just engagement metrics." (Claim: CLAIM-20260224-016)
+> "If it's not interoperable with EDS/FSE, it won't scale beyond a local pilot." (Claim: CLAIM-20260225-014)
 
 ## Primary Job-to-be-Done
-Move quickly from evaluation to deployment while avoiding integration traps and fragmented point solutions. (Claim: CLAIM-20260224-022)
+Move quickly from evaluation to deployment while staying interoperable with national backbone constraints and meeting evaluation expectations. (Claims: CLAIM-20260225-014, CLAIM-20260225-013)
 
 ## Context of Use
-Works inside structured purchasing cycles and renewal cadences, under constant vendor noise. (Claims: CLAIM-20260224-017, CLAIM-20260224-023)
+Works inside procurement/governance programs where appraisal-grade evidence and interoperability constraints shape what can scale. (Claims: CLAIM-20260225-013, CLAIM-20260225-014)
 
 ## Top 3 Motivations and Pain Points (SAY/DO)
-- **Motivation/Pain 1**: Needs outcomes evidence but also practical implementation feasibility. (Claims: CLAIM-20260224-016, CLAIM-20260224-018)
-- **Motivation/Pain 2**: Point solution fatigue language: integration complexity and training burden slow pilots. (Claim: CLAIM-20260224-022)
-- **Motivation/Pain 3**: Market saturation creates evaluation overhead and stakeholder skepticism. (Claim: CLAIM-20260224-023)
+- **Motivation/Pain 1**: Needs appraisal-grade evidence framing that supports procurement recommendations. (Claim: CLAIM-20260225-013)
+- **Motivation/Pain 2**: Interoperability constraints (EDS/FSE interaction) can block scaling even when pilots succeed locally. (Claim: CLAIM-20260225-014)
+- **Motivation/Pain 3**: For AI/DTx, outcome measurement and privacy compliance expectations must be defined early to avoid rework. (Claim: CLAIM-20260225-015)
 
 ## Ranked Decision Criteria (SAY/VALUE)
-1. **Implementation feasibility**: Reduce integration and workflow disruption drivers of fatigue. (Claim: CLAIM-20260224-022)
-2. **Outcome measurement**: Must support measurable clinical/economic outcomes. (Claim: CLAIM-20260224-016)
-3. **Contract readiness**: Support PBC structures and reporting. (Claim: CLAIM-20260224-018)
+1. **Interoperability feasibility**: Works with national backbone constraints (EDS/FSE interaction) and scales cross-Region. (Claim: CLAIM-20260225-014)
+2. **HTA-ready evidence**: Evidence artifacts that can support appraisal and procurement recommendations. (Claim: CLAIM-20260225-013)
+3. **Measurement + privacy**: Outcome measurement criteria and privacy-compliant data use expectations. (Claim: CLAIM-20260225-015)
 
 ## Barriers, Anxieties, and Triggers (DO)
-- **Barriers**: Disparate technologies complicate work and slow adoption. (Claim: CLAIM-20260224-022)
-- **Anxieties**: Buying another point solution increases fragmentation. (Claim: CLAIM-20260224-022)
-- **Triggers**: Annual review and short contract cycles drive constant pilot churn. (Claim: CLAIM-20260224-017)
+- **Barriers**: Interoperability constraints can make integration slow or block scale-out beyond a pilot. (Claim: CLAIM-20260225-014)
+- **Anxieties**: Misalignment with EDS/FSE constraints creates non-scalable local solutions. (Claim: CLAIM-20260225-014)
+- **Triggers**: Procurement recommendations require appraisal-grade evidence readiness. (Claim: CLAIM-20260225-013)
 
 ## Preferred Channels and Touchpoints (DO)
-- Procurement reviews and contracting cycles; PBC pilots where feasible. (Claims: CLAIM-20260224-017, CLAIM-20260224-018)
+- Procurement review and appraisal processes aligned to HTA and interoperability constraints. (Claims: CLAIM-20260225-013, CLAIM-20260225-014)
 
 ## Design Implications
-- **Messaging**: Lead with "reduces point solution fatigue" and outcomes proof together. (Claims: CLAIM-20260224-022, CLAIM-20260224-016)
-- **Offer**: Provide implementation playbooks that reduce training/integration burden. (Claim: CLAIM-20260224-022)
-- **UX/Service**: Report outcomes in a PBC-friendly way. (Claim: CLAIM-20260224-018)
-- **Trust**: Avoid overclaiming; align evidence to measurable outcomes. (Claim: CLAIM-20260224-016)
-- **Channel**: Support repeatable pilots with clear success criteria. (Claim: CLAIM-20260224-018)
+- **Messaging**: Lead with interoperability fit (EDS/FSE) and HTA-ready evidence framing. (Claims: CLAIM-20260225-014, CLAIM-20260225-013)
+- **Offer**: Provide outcome measurement and privacy compliance artifacts early (especially for AI/DTx). (Claim: CLAIM-20260225-015)
+- **UX/Service**: Make integration constraints explicit and design for cross-Region scaling. (Claim: CLAIM-20260225-014)
 
 ---
 

@@ -3,11 +3,9 @@ id: RUN-20260224-insurer-do-001
 framework: do
 cohort: insurer
 inputs:
-  - CLAIM-20260224-017
-  - CLAIM-20260224-018
-  - CLAIM-20260224-021
-  - CLAIM-20260224-025
-  - CLAIM-20260224-027
+  - CLAIM-20260225-013
+  - CLAIM-20260225-015
+  - CLAIM-20260225-014
 raw_output: inline
 intermediate_output:
 final_output:
@@ -23,8 +21,6 @@ Collect grounded behavioral fragments (DO) for the insurer cohort.
 ## Raw Output
 Behavioral fragments supported by inputs:
 
-1. Digital health purchasing involves formal decision-making (survey evidence exists about decision-makers and review cycles). (Claim: CLAIM-20260224-017)
-2. Performance-based contracting is commonly used or planned, tying payment to outcomes. (Claim: CLAIM-20260224-018)
-3. Operational capacity constraints exist (employer benefits teams limited capacity to negotiate/adjudicate complex PBCs). (Claim: CLAIM-20260224-021)
-4. Payer compliance work: impacted payers must implement HL7 FHIR APIs and streamline prior auth; timelines and reporting required. (Claim: CLAIM-20260224-025)
-5. AI adoption in utilization review/prior auth and claims adjudication is rapid; governance is required to prevent harms. (Claim: CLAIM-20260224-027)
+1. Procurement/governance decisions are supported by national HTA appraisal processes and recommendations (PNHTA-DM). (Claim: CLAIM-20260225-013)
+2. For AI/DTx, evaluation requires outcome measurement criteria and privacy-compliant health-data utilization. (Claim: CLAIM-20260225-015)
+3. Interoperability and data backbone constraints are set by EDS and its interaction with FSE and national systems. (Claim: CLAIM-20260225-014)

@@ -3,11 +3,9 @@ id: RUN-20260224-insurer-kano-001
 framework: kano
 cohort: insurer
 inputs:
-  - CLAIM-20260224-019
-  - CLAIM-20260224-026
-  - CLAIM-20260224-028
-  - CLAIM-20260224-020
-  - CLAIM-20260224-025
+  - CLAIM-20260225-013
+  - CLAIM-20260225-015
+  - CLAIM-20260225-014
 raw_output:
 intermediate_output: inline
 final_output:
@@ -22,12 +20,11 @@ Draft Kano categorization grounded in evidence.
 
 ## Intermediate Output
 Taken for granted (Basics):
-- Compliance alignment with required APIs and prior auth operational requirements. (Claims: CLAIM-20260224-025, CLAIM-20260224-026)
-- Governance expectations for AI tools used in utilization review. (Claim: CLAIM-20260224-028)
+ - Procurement/HTA fit: evidence artifacts that support appraisal and procurement recommendations. (Claim: CLAIM-20260225-013)
+ - Interoperability fit: alignment with EDS/FSE backbone constraints. (Claim: CLAIM-20260225-014)
 
 Performance attributes:
-- Auditability of ROI and ability to validate claims; transparent measurement. (Claim: CLAIM-20260224-020)
-- Outcome measurement shifting away from engagement metrics; credible clinical/economic measurement. (Claim: CLAIM-20260224-019)
+ - Outcome measurement design and privacy-compliant health-data utilization criteria. (Claim: CLAIM-20260225-015)
 
 Delighters:
-- Reduced administrative burden while meeting compliance (automation of approvable requests without harms). (Claim: CLAIM-20260224-028)
+ - Reduced integration burden while maintaining interoperability and measurement rigor. (Claims: CLAIM-20260225-014, CLAIM-20260225-015)

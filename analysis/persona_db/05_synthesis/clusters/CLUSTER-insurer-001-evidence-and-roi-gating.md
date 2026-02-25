@@ -2,34 +2,30 @@
 id: CLUSTER-insurer-001-evidence-and-roi-gating
 cohort: insurer
 label: Evidence + ROI Gating
-definition: Purchasers gate adoption on measurable outcomes and auditability; they distrust vendor-built ROI models and prefer outcome-linked contracting.
+definition: Italy/SSN stakeholders gate adoption on HTA-ready evidence, measurable outcomes, and privacy-compliant data governance.
 persona_refs:
   - PERSONA-insurer-001-evidence-assurance-analyst
   - PERSONA-insurer-002-roi-governance-executive
 claim_refs:
-  - CLAIM-20260224-016
-  - CLAIM-20260224-019
-  - CLAIM-20260224-020
-  - CLAIM-20260224-024
-  - CLAIM-20260224-030
+  - CLAIM-20260225-013
+  - CLAIM-20260225-015
+  - CLAIM-20260225-014
 ---
 
 # Cluster: Evidence + ROI Gating
 
 ## Definition
-Insurer stakeholders require measurable clinical and economic outcomes and auditability, with explicit skepticism of vendor-built ROI analyses and a market posture that treats performance-based contracting as expected. (Claim: CLAIM-20260224-016)
+Stakeholders require HTA-ready evidence artifacts, measurable outcome framing, and privacy-compliant health-data utilization; adoption also depends on interoperability fit with national backbone constraints. (Claims: CLAIM-20260225-013, CLAIM-20260225-015, CLAIM-20260225-014)
 
 ## Separating Variables
-- Auditability rigor vs speed-to-adoption pressure (Claim: CLAIM-20260224-020)
-- Appetite for investment vs ROI skepticism (Claim: CLAIM-20260224-024)
+- Appraisal-grade evidence readiness vs narrative-only claims (Claim: CLAIM-20260225-013)
+- Measurement rigor and privacy compliance feasibility (Claim: CLAIM-20260225-015)
 
 ## Persona Members
 - Evidence Assurance Analyst (ID: PERSONA-insurer-001-evidence-assurance-analyst)
 - ROI Governance Executive (ID: PERSONA-insurer-002-roi-governance-executive)
 
 ## Shared Claims
-- Purchasers demand measurable clinical and economic outcomes. (ID: CLAIM-20260224-016)
-- Shift away from engagement-only toward clinical/financial outcomes. (ID: CLAIM-20260224-019)
-- Distrust of vendor-built ROI analyses; limited validation capacity. (ID: CLAIM-20260224-020)
-- ROI not yet realized framing exists in survey reporting. (ID: CLAIM-20260224-024)
-- PBC framed as an expectation. (ID: CLAIM-20260224-030)
+- Procurement decisions are supported by national HTA appraisal processes and recommendations (PNHTA-DM). (ID: CLAIM-20260225-013)
+- Outcome measurement and privacy-compliant health-data utilization criteria (especially for AI/DTx). (ID: CLAIM-20260225-015)
+- Interoperability fit with EDS/FSE and national system constraints. (ID: CLAIM-20260225-014)

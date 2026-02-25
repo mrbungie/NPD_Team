@@ -3,11 +3,9 @@ id: RUN-20260224-insurer-do-001
 framework: do
 cohort: insurer
 inputs:
-  - CLAIM-20260224-017
-  - CLAIM-20260224-018
-  - CLAIM-20260224-021
-  - CLAIM-20260224-025
-  - CLAIM-20260224-027
+  - CLAIM-20260225-013
+  - CLAIM-20260225-015
+  - CLAIM-20260225-014
 raw_output:
 intermediate_output:
 final_output: inline
@@ -23,8 +21,6 @@ Define canonical insurer DO behaviors to model in personas.
 ## Final Output
 Canonical DO behaviors:
 
-1. Structured purchasing and review cycles exist for digital health solutions. (Claim: CLAIM-20260224-017)
-2. Risk-sharing via performance-based contracting is used or planned. (Claim: CLAIM-20260224-018)
-3. Limited operational capacity is a persistent constraint (contract negotiation + adjudication). (Claim: CLAIM-20260224-021)
-4. Compliance-driven API modernization (FHIR APIs) and prior authorization workflow requirements. (Claim: CLAIM-20260224-025)
-5. AI adoption in utilization review/claims with governance requirements to avoid harms. (Claim: CLAIM-20260224-027)
+1. Policy/procurement decisions rely on national HTA appraisal processes and recommendations (PNHTA-DM). (Claim: CLAIM-20260225-013)
+2. AI/DTx evaluation requires outcome measurement and privacy-compliant health-data utilization expectations. (Claim: CLAIM-20260225-015)
+3. Interoperability fit must align with EDS/FSE and national system constraints. (Claim: CLAIM-20260225-014)

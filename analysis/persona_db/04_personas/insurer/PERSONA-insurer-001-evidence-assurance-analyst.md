@@ -13,48 +13,43 @@ derived_from_runs:
 cluster_refs:
   - CLUSTER-insurer-001-evidence-and-roi-gating
 claim_refs:
-  - CLAIM-20260224-016
-  - CLAIM-20260224-019
-  - CLAIM-20260224-020
-  - CLAIM-20260224-025
-  - CLAIM-20260224-026
-  - CLAIM-20260224-028
+  - CLAIM-20260225-013
+  - CLAIM-20260225-015
+  - CLAIM-20260225-014
 ---
 
 # Persona: Evidence Assurance Analyst
 
-> "Most of the ROI analyses we get are built by the vendors themselves... There's no way we can validate those claims internally." (Claim: CLAIM-20260224-020)
+> "We need an HTA-ready evidence dossier, not marketing claims." (Claim: CLAIM-20260225-013)
 
 ## Primary Job-to-be-Done
-Reduce purchase and operational risk by demanding measurable outcomes and auditability before adoption. (Claim: CLAIM-20260224-016)
+Reduce adoption risk by requiring appraisal-grade evidence, measurable outcomes framing, and interoperability fit with national backbone constraints. (Claims: CLAIM-20260225-013, CLAIM-20260225-015, CLAIM-20260225-014)
 
 ## Context of Use
-Evaluates digital health solutions within structured purchasing cycles; focuses on evidence quality and outcome measurement. (Claims: CLAIM-20260224-017, CLAIM-20260224-019)
+Evaluates digital health solutions through an appraisal lens and checks interoperability constraints with the national backbone (EDS/FSE interaction). (Claims: CLAIM-20260225-013, CLAIM-20260225-014)
 
 ## Top 3 Motivations and Pain Points (SAY/DO)
-- **Motivation/Pain 1**: Rejects engagement-only claims; needs measurable clinical and economic outcomes. (Claims: CLAIM-20260224-016, CLAIM-20260224-019)
-- **Motivation/Pain 2**: Distrusts vendor-built ROI analyses and needs validation paths. (Claim: CLAIM-20260224-020)
-- **Motivation/Pain 3**: Must ensure solutions do not introduce harms in automated decision processes. (Claim: CLAIM-20260224-028)
+- **Motivation/Pain 1**: Needs HTA-ready evidence artifacts that support appraisal and procurement recommendations. (Claim: CLAIM-20260225-013)
+- **Motivation/Pain 2**: Needs outcome measurement and privacy-compliant health-data utilization criteria (especially for AI/DTx). (Claim: CLAIM-20260225-015)
+- **Motivation/Pain 3**: Needs interoperability fit with EDS/FSE constraints to avoid non-scalable local integrations. (Claim: CLAIM-20260225-014)
 
 ## Ranked Decision Criteria (SAY/VALUE)
-1. **Auditability**: Ability to validate claims and measurement transparency. (Claim: CLAIM-20260224-020)
-2. **Outcome relevance**: Clinical + financial outcome measures, not proxy engagement. (Claim: CLAIM-20260224-019)
-3. **Compliance alignment**: Fit with payer API and prior auth requirements. (Claims: CLAIM-20260224-025, CLAIM-20260224-026)
+1. **HTA-ready evidence**: Appraisal-grade artifacts that can support procurement decisions. (Claim: CLAIM-20260225-013)
+2. **Measurement + privacy**: Outcome measurement criteria and privacy-compliant data use expectations. (Claim: CLAIM-20260225-015)
+3. **Interoperability fit**: Works with EDS/FSE and national system constraints. (Claim: CLAIM-20260225-014)
 
 ## Barriers, Anxieties, and Triggers (DO)
-- **Barriers**: Measurement is operationally hard when metrics are siloed or unverifiable. (Claim: CLAIM-20260224-020)
-- **Anxieties**: AI tools can reinforce unjust denial patterns and create harm. (Claim: CLAIM-20260224-028)
-- **Triggers**: New vendor pitches and renewal cycles force outcome scrutiny. (Claim: CLAIM-20260224-017)
+- **Barriers**: Defining outcome measurement and data governance that is compliant and feasible is non-trivial. (Claim: CLAIM-20260225-015)
+- **Anxieties**: Non-compliant data use or unclear governance creates adoption risk. (Claim: CLAIM-20260225-015)
+- **Triggers**: Procurement decisions require appraisal-grade evidence readiness. (Claim: CLAIM-20260225-013)
 
 ## Preferred Channels and Touchpoints (DO)
-- Survey-informed purchasing and review cycles; recurring evaluation of offerings. (Claim: CLAIM-20260224-017)
+- Appraisal and recommendation artifacts used to support procurement decisions. (Claim: CLAIM-20260225-013)
 
 ## Design Implications
-- **Messaging**: Lead with measurable outcomes and methods; avoid engagement-first positioning. (Claim: CLAIM-20260224-016)
-- **Offer**: Provide evidence packs and measurement transparency to reduce ROI distrust. (Claim: CLAIM-20260224-020)
-- **UX/Service**: Build reporting aligned to clinical + financial outcomes. (Claim: CLAIM-20260224-019)
-- **Trust**: Include governance mechanisms and monitoring for harm modes. (Claim: CLAIM-20260224-028)
-- **Channel**: Demonstrate compliance fit (FHIR APIs, prior auth requirements). (Claims: CLAIM-20260224-025, CLAIM-20260224-026)
+- **Messaging**: Lead with HTA-ready evidence framing, not engagement-first positioning. (Claim: CLAIM-20260225-013)
+- **Offer**: Provide outcome measurement and privacy compliance artifacts. (Claim: CLAIM-20260225-015)
+- **UX/Service**: Make interoperability constraints and integration approach explicit (EDS/FSE interaction). (Claim: CLAIM-20260225-014)
 
 ---
 

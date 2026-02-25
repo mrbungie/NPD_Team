@@ -12,48 +12,43 @@ derived_from_runs:
 cluster_refs:
   - CLUSTER-insurer-001-evidence-and-roi-gating
 claim_refs:
-  - CLAIM-20260224-024
-  - CLAIM-20260224-029
-  - CLAIM-20260224-030
-  - CLAIM-20260224-018
-  - CLAIM-20260224-026
-  - CLAIM-20260224-027
+  - CLAIM-20260225-013
+  - CLAIM-20260225-015
+  - CLAIM-20260225-014
 ---
 
 # Persona: ROI Governance Executive
 
-> "Performance-based contracting is... table stakes." (Claim: CLAIM-20260224-030)
+> "If we can't justify it in HTA terms and measure outcomes compliantly, we can't adopt it." (Claims: CLAIM-20260225-013, CLAIM-20260225-015)
 
 ## Primary Job-to-be-Done
-Invest in technology that improves operations and member experience while proving ROI and reducing reputational/regulatory risk. (Claim: CLAIM-20260224-024)
+Invest in technology that can be justified as a policy/procurement decision and measured credibly under privacy-compliant data governance. (Claims: CLAIM-20260225-013, CLAIM-20260225-015)
 
 ## Context of Use
-Balances investment appetite with ROI uncertainty; expects risk-sharing contract posture and governance for automation decisions. (Claims: CLAIM-20260224-024, CLAIM-20260224-030)
+Balances investment appetite with procurement justification needs; expects HTA-ready evidence, outcome measurement, and interoperability fit with national backbone constraints. (Claims: CLAIM-20260225-013, CLAIM-20260225-015, CLAIM-20260225-014)
 
 ## Top 3 Motivations and Pain Points (SAY/DO)
-- **Motivation/Pain 1**: ROI is described as elusive; wants defensible value narratives and measurement. (Claims: CLAIM-20260224-024, CLAIM-20260224-029)
-- **Motivation/Pain 2**: Expects contracts to tie payment to outcomes (risk-sharing). (Claim: CLAIM-20260224-018)
-- **Motivation/Pain 3**: Concerned about harms and controversy from AI-driven insurance decisions. (Claim: CLAIM-20260224-027)
+- **Motivation/Pain 1**: Needs procurement decisions supported by appraisal and recommendation artifacts. (Claim: CLAIM-20260225-013)
+- **Motivation/Pain 2**: Needs outcome measurement and privacy-compliant health-data utilization criteria (especially for AI/DTx). (Claim: CLAIM-20260225-015)
+- **Motivation/Pain 3**: Needs interoperability fit with EDS/FSE constraints to avoid non-scalable adoption. (Claim: CLAIM-20260225-014)
 
 ## Ranked Decision Criteria (SAY/VALUE)
-1. **Outcome-linked accountability**: PBC posture aligned to outcomes. (Claim: CLAIM-20260224-018)
-2. **Governance**: Ability to show oversight and reduce harms in utilization review/prior auth. (Claim: CLAIM-20260224-027)
-3. **Compliance + transparency**: Meet prior auth operational requirements and reporting expectations. (Claim: CLAIM-20260224-026)
+1. **HTA-ready evidence**: Appraisal-grade artifacts to support procurement recommendations. (Claim: CLAIM-20260225-013)
+2. **Measurement + privacy**: Outcome measurement criteria and privacy-compliant data use expectations. (Claim: CLAIM-20260225-015)
+3. **Interoperability fit**: Alignment with EDS/FSE and national system constraints. (Claim: CLAIM-20260225-014)
 
 ## Barriers, Anxieties, and Triggers (DO)
-- **Barriers**: Difficulty tracking tech cost-value and realizing ROI in practice. (Claim: CLAIM-20260224-024)
-- **Anxieties**: Wrongful denials and harm narratives tied to automation. (Claim: CLAIM-20260224-027)
-- **Triggers**: Renewals, public scrutiny, and regulatory timelines. (Claims: CLAIM-20260224-026, CLAIM-20260224-030)
+- **Barriers**: Defining outcome measurement and privacy compliance in a feasible way slows adoption. (Claim: CLAIM-20260225-015)
+- **Anxieties**: Non-compliant data use or unclear governance creates procurement risk. (Claim: CLAIM-20260225-015)
+- **Triggers**: Procurement decisions require appraisal-grade evidence readiness. (Claim: CLAIM-20260225-013)
 
 ## Preferred Channels and Touchpoints (DO)
-- Contracting and purchasing processes that incorporate outcome measurement. (Claim: CLAIM-20260224-018)
+- Procurement processes that rely on appraisal and recommendation artifacts. (Claim: CLAIM-20260225-013)
 
 ## Design Implications
-- **Messaging**: Frame ROI measurement strategy and outcomes accountability. (Claims: CLAIM-20260224-029, CLAIM-20260224-018)
-- **Offer**: Provide governance playbooks and monitoring for AI-supported decisions. (Claim: CLAIM-20260224-027)
-- **UX/Service**: Align with prior auth decision timeframes and transparency. (Claim: CLAIM-20260224-026)
-- **Trust**: Show how harms are prevented and audited. (Claim: CLAIM-20260224-027)
-- **Channel**: Contract-ready reporting artifacts for PBC contexts. (Claim: CLAIM-20260224-018)
+- **Messaging**: Frame adoption in HTA-ready evidence terms and measurable outcomes under compliant data governance. (Claims: CLAIM-20260225-013, CLAIM-20260225-015)
+- **Offer**: Provide outcome measurement design and privacy compliance artifacts. (Claim: CLAIM-20260225-015)
+- **UX/Service**: Make interoperability constraints and integration approach explicit (EDS/FSE interaction). (Claim: CLAIM-20260225-014)
 
 ---
 
