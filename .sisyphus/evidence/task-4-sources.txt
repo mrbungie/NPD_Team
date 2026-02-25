@@ -1,0 +1,11 @@
+Source registry verification
+
+- Source files in methodology/persona_db/01_sources: 8
+- Required keys check: 3 required keys x 8 files = 24 matches
+- External URL coverage: 4 https URLs (nngroup.com, productplan.com, nielseniq.com, mckinsey.com)
+
+Spot-check webfetch:
+- NN/g page contained the quoted attitudinal vs behavioral definitions.
+- ProductPlan page contained the quoted Kano paired-question and prioritization guidance.
+- NielsenIQ page contained the quoted say-do gap framing.
+- McKinsey page fetch failed in this environment (socket closed); URL recorded.

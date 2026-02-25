@@ -1,0 +1,8 @@
+DO runs verification
+
+- DO run files created: 6 (raw/intermediate/final for insurer and patient_unknown_symptom)
+- Final headings present in both final files:
+  - Behavioral journey map
+  - Friction map
+  - Implicit needs list
+- SOURCE-* references in DO run files: none found (claim-only citations)

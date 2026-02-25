@@ -1,0 +1,6 @@
+changelog_template.md
+claim_template.md
+cluster_template.md
+framework_run_template.md
+persona_template.md
+source_template.md

@@ -1,0 +1,6 @@
+Claim registry verification
+
+- Claim files in methodology/persona_db/02_claims: 30
+- Empty source_refs lists: none found
+- claim_type key present: 30/30
+- Required keys present (id, statement, claim_type, confidence, applies_to, source_refs, review_status): present across all files (spot-checked via grep counts)

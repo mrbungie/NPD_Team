@@ -1,0 +1,9 @@
+SAY runs verification
+
+- SAY run files created: 6 (raw/intermediate/final for insurer and patient_unknown_symptom)
+- Final headings present in both final files:
+  - Thematic clusters
+  - Priority drivers
+  - Declared values
+  - Perceived competition
+- SOURCE-* references in SAY run files: none found (claim-only citations)

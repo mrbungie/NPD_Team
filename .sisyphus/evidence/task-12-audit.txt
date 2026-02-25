@@ -1,0 +1,4 @@
+Audit artifacts verification
+
+- methodology/persona_db/06_audit contains: changelog.md, contradictions.md, validation_report.md
+- changelog includes required keys: what_changed, why, evidence_delta

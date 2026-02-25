@@ -1,0 +1,6 @@
+Unknown-symptom patient persona verification
+
+- Persona files created: 4
+- no-medical-advice disclaimer present in all files
+- SOURCE-* references in patient persona files: none found
+- Diagnosis/treatment advisory phrases check: no matches (diagnosis/prescribe/"you should")

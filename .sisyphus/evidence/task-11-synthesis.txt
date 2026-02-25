@@ -1,0 +1,6 @@
+Cluster + synthesis verification
+
+- Cluster records created: 6 (3 insurer, 3 patient_unknown_symptom)
+- Synthesis files created: 2
+- Synthesis files include frontmatter refs: cluster_refs, persona_refs, run_refs, claim_refs
+- Empty claim_refs in cluster records: none found

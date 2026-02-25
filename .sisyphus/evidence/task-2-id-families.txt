@@ -1,0 +1,9 @@
+Manifest confirms ID families and cohorts:
+
+39: ID prefixes are uppercase ASCII (SOURCE-, CLAIM-, RUN-, PERSONA-, CLUSTER-)
+43: Format: SOURCE-YYYYMMDD-NNN
+63: Format: CLAIM-YYYYMMDD-NNN
+82: Format: RUN-YYYYMMDD-<cohort>-<framework>-NNN
+89-92: Valid cohorts: insurer, patient_unknown_symptom
+111: Format: PERSONA-<cohort>-NNN-<slug>
+130: Format: CLUSTER-<cohort>-NNN-<slug>

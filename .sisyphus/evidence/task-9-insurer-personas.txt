@@ -1,0 +1,5 @@
+Insurer persona verification
+
+- Persona files created: 4 (analyst, executive, product_owner, operations_manager)
+- SOURCE-* references in insurer persona files: none found
+- claim_refs present in all personas
