@@ -18,6 +18,13 @@ This document is an interview record.
 
 ## Responses
 
+
+### Q: INS-Q00
+- question_type: profile
+- answer: age: 33; region: Sicilia; role: operations_manager; cohort_specific_context: organization_type asl_ats; years_in_role 3
+- source_refs:
+  - SOURCE-20260225-028
+
 ### Q: INS-Q01
 - question_type: single_choice
 - answer: operational_feasibility
@@ -36,7 +43,7 @@ This document is an interview record.
 
 ### Q: INS-Q03
 - question_type: rating_scale 1-5
-- answer: (not captured in this interview)
+- answer: not_captured
 - source_refs:
   - SOURCE-20260225-028
 
@@ -68,7 +75,7 @@ This document is an interview record.
 
 ### Q: INS-Q08
 - question_type: numeric
-- answer: (not captured in this interview)
+- answer: not_captured
 - source_refs:
   - SOURCE-20260225-028
 
@@ -88,7 +95,7 @@ This document is an interview record.
 
 ### Q: INS-Q11
 - question_type: rating_scale 0-10
-- answer: (not captured in this interview)
+- answer: not_captured
 - source_refs:
   - SOURCE-20260225-028
 
@@ -102,7 +109,7 @@ This document is an interview record.
 
 ### Q: INS-Q13
 - question_type: numeric
-- answer: (not captured in this interview)
+- answer: not_captured
 - source_refs:
   - SOURCE-20260225-028
 

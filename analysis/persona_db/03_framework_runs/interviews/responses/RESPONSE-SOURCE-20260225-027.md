@@ -18,6 +18,13 @@ This document is an interview record.
 
 ## Responses
 
+
+### Q: INS-Q00
+- question_type: profile
+- answer: age: 37; region: Piemonte; role: digital_health_program_lead; cohort_specific_context: organization_type asl_ats; years_in_role 4
+- source_refs:
+  - SOURCE-20260225-027
+
 ### Q: INS-Q01
 - question_type: single_choice
 - answer: operational_feasibility
@@ -36,7 +43,7 @@ This document is an interview record.
 
 ### Q: INS-Q03
 - question_type: rating_scale 1-5
-- answer: (not captured in this interview)
+- answer: not_captured
 - source_refs:
   - SOURCE-20260225-027
 
@@ -70,7 +77,7 @@ This document is an interview record.
 
 ### Q: INS-Q08
 - question_type: numeric
-- answer: (not captured in this interview)
+- answer: not_captured
 - source_refs:
   - SOURCE-20260225-027
 
@@ -90,7 +97,7 @@ This document is an interview record.
 
 ### Q: INS-Q11
 - question_type: rating_scale 0-10
-- answer: (not captured in this interview)
+- answer: not_captured
 - source_refs:
   - SOURCE-20260225-027
 
@@ -104,7 +111,7 @@ This document is an interview record.
 
 ### Q: INS-Q13
 - question_type: numeric
-- answer: (not captured in this interview)
+- answer: not_captured
 - source_refs:
   - SOURCE-20260225-027
 
