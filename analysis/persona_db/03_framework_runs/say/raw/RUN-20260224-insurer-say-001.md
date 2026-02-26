@@ -41,7 +41,7 @@ Question-by-question synthetic interview answers (subset of instrument):
 - Source refs: `SOURCE-20260225-007`
 
 2. `INS-Q03` (rating_scale 1-5)
-- Answer: not_captured
+- Answer: 2  # synthetic_estimate
 - Claim refs: `CLAIM-20260225-015`
 - Source refs: `SOURCE-20260225-007`
 
