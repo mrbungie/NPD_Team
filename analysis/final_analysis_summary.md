@@ -27,6 +27,8 @@ It is grounded in the evidence chain in `analysis/persona_db/`:
 - Create a coherent patient journey model + insurer procurement model
 - Choose experiments and success metrics that match real constraints
 
+Business-maker digest (journey maps + empathy maps): `analysis/business_maker_digest.md`
+
 ## 2) Executive Takeaways (What Matters Most)
 
 ### Patient side (unknown/unexplained symptoms)
@@ -37,12 +39,21 @@ It is grounded in the evidence chain in `analysis/persona_db/`:
 - Access friction (stigma, appointment logistics, “normal” results, affordability) is a primary determinant of persistence and outcomes. (Claim: CLAIM-20260224-009)
 - A core value lever is moving from “uncertainty” to “clinician-usable communication” (reusable one-page summaries + visit scaffolding + next-step forks that reduce retelling and momentum loss). (Claims: CLAIM-20260224-014, CLAIM-20260225-017, CLAIM-20260225-019)
 
-### Insurer/purchaser side
+Quantitative signals (initial, national-level; see `analysis/r_pipeline/report_summary.md`):
+- Unmet need due to waiting lists (Italy, 2014 -> 2019): 29.9% -> 25.2% (Eurostat EHIS).
+- Handoff-risk proxy by age (Italy, 2019): highest in 45-54 and 55-64; lowest in 15-24 (Eurostat EHIS).
+- Equity gap proxy (low education minus high education, Italy, 2014 -> 2019): 7.6 pp -> 6.6 pp (Eurostat EHIS).
+
+### Payer / procurement stakeholder side (Italy/SSN)
 - In Italy, procurement/governance decisions for medical devices (including digital health) are mediated by national HTA appraisal processes and recommendations (PNHTA-DM). (Claim: CLAIM-20260225-013)
 - For AI/DTx, AGENAS is developing an HTA evaluation framework including outcome measurement and privacy-compliant health-data utilization criteria. (Claim: CLAIM-20260225-015)
 - Interoperability and data backbone constraints are set by Italy's EDS and its interaction with FSE and national systems (e.g., Sistema TS). (Claim: CLAIM-20260225-014)
 - Governance clarity (controller/processor mapping, lawful basis, DPIA readiness, auditability) is a common hidden veto; unclear governance is treated as dead on arrival. (Claims: CLAIM-20260225-033, CLAIM-20260225-046)
 - Procurement and scale-out frequently stall on outcome ownership + credible monitoring plans; manual reporting burden is a failure mode. (Claim: CLAIM-20260225-038)
+
+Quantitative signals (context, not a substitute for procurement evidence; see `analysis/r_pipeline/report_summary.md`):
+- Financing mix (Italy, latest year 2024): HF1 public/compulsory 74.25%, HF2 voluntary 3.44%, HF3 out-of-pocket 22.31% (Eurostat SHA).
+- Data readiness (official numeric surfaces): EHIS UN1E obs 528; UN2E obs 720; SHA subset obs 39; Orphadata OpenAPI paths 32.
 
 ## 3) Evidence Strength Snapshot
 
@@ -52,11 +63,13 @@ It is grounded in the evidence chain in `analysis/persona_db/`:
 - Italy/SSN record access and interoperability objectives (FSE 2.0). (Claims: CLAIM-20260225-011, CLAIM-20260225-012)
 - Italy HTA/procurement governance anchor (PNHTA-DM). (Claim: CLAIM-20260225-013)
 - Italy national health data ecosystem (EDS) as interoperability backbone. (Claim: CLAIM-20260225-014)
+- Quantitative proxies for unmet need, equity gap, and financing mix are available via Eurostat EHIS/SHA and are scripted in `analysis/r_pipeline/`. (See: `analysis/r_pipeline/report_summary.md`)
 
 ### Medium-confidence constraints (do not treat as core truth without more validation)
 - “Point solution fatigue” numbers and market counts from blog-level secondary sources. (Claims: CLAIM-20260224-022, CLAIM-20260224-023)
 - ROI-not-realized survey figures when sourced via trade publication summaries. (Claim: CLAIM-20260224-024)
 - Synthetic interview-derived product signals (do/say/want, empathy-map, and journey breakdown moments) were used to complete personas and extend DO/SAY runs. (Claims: CLAIM-20260225-017, CLAIM-20260225-019, CLAIM-20260225-024, CLAIM-20260225-033, CLAIM-20260225-038, CLAIM-20260225-047)
+- Synthetic interview numeric/rating answers may include explicit `answer_basis: synthetic_estimate` fields; treat them as persona scaffolding, not institutional statistics.
 
 ## 4) Patient Cohort: What to Build For (patient_unknown_symptom)
 
@@ -291,6 +304,7 @@ These items are recommended to make the analysis more complete and/or better loc
 
 ### If the product targets Italy/SSN (DeepWiki context)
 - Add Italy/SSN system constraint sources as first-class evidence (waiting times, outcomes, regional variance): PNGLA, PNE, LEA/NSG, SDO, ISTAT EHIS.
+- The current `analysis/r_pipeline/` adds a first national-level numeric layer via Eurostat EHIS/SHA; the next step is Region-level variance using PNLA/PNE/NSG/SDO where publishable.
 - Add system-capacity and governance sources as next evidence to gather (PNGLA/PNE/LEA/SDO/ISTAT + governance updates like EHDS/Garante), and integrate them into CLAIM/RUN layers.
 
 ### Patient journey enrichment
