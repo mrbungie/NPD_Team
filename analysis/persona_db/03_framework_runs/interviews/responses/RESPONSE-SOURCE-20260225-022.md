@@ -33,7 +33,8 @@ This document is an interview record.
 
 ### Q: PUS-Q02
 - question_type: rating_scale 0-10
-- answer: not_captured
+- answer: 8
+- answer_basis: synthetic_estimate
 - source_refs:
   - SOURCE-20260225-022
 
@@ -61,13 +62,15 @@ This document is an interview record.
 
 ### Q: PUS-Q06
 - question_type: numeric
-- answer: not_captured
+- answer: 5
+- answer_basis: synthetic_estimate
 - source_refs:
   - SOURCE-20260225-022
 
 ### Q: PUS-Q07
 - question_type: numeric
-- answer: not_captured
+- answer: 45
+- answer_basis: synthetic_estimate
 - source_refs:
   - SOURCE-20260225-022
 
@@ -79,7 +82,8 @@ This document is an interview record.
 
 ### Q: PUS-Q09
 - question_type: rating_scale 0-10
-- answer: not_captured
+- answer: 7
+- answer_basis: synthetic_estimate
 - claim_refs:
   - CLAIM-20260224-014
 - source_refs:
