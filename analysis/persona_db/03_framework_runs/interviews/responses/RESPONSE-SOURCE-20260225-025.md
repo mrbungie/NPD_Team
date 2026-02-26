@@ -43,7 +43,8 @@ This document is an interview record.
 
 ### Q: INS-Q03
 - question_type: rating_scale 1-5
-- answer: not_captured
+- answer: 2
+- answer_basis: synthetic_estimate
 - source_refs:
   - SOURCE-20260225-025
 
@@ -77,7 +78,8 @@ This document is an interview record.
 
 ### Q: INS-Q08
 - question_type: numeric
-- answer: not_captured
+- answer: 12
+- answer_basis: synthetic_estimate
 - source_refs:
   - SOURCE-20260225-025
 
@@ -97,7 +99,8 @@ This document is an interview record.
 
 ### Q: INS-Q11
 - question_type: rating_scale 0-10
-- answer: not_captured
+- answer: 6
+- answer_basis: synthetic_estimate
 - source_refs:
   - SOURCE-20260225-025
 
@@ -111,7 +114,8 @@ This document is an interview record.
 
 ### Q: INS-Q13
 - question_type: numeric
-- answer: not_captured
+- answer: 6
+- answer_basis: synthetic_estimate
 - source_refs:
   - SOURCE-20260225-025
 
