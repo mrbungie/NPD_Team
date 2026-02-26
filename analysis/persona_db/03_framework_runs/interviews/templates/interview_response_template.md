@@ -35,6 +35,7 @@ This document is an interview record.
 
 - question_type:
 - answer: (use explicit tokens like `not_captured` or `prefer_not_to_say` instead of leaving blank)
+- answer_basis: (optional; e.g., `synthetic_estimate` for synthetic numeric/rating answers)
 - other (if applicable):
 - claim_refs: (optional)
   - CLAIM-...

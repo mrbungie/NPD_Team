@@ -68,8 +68,8 @@ Use `analysis/persona_db/03_framework_runs/interviews/templates/interview_respon
 - Keep interview labeling explicit:
   - `Interview answer` for direct respondent data
   - `Synthetic interview answer` for evidence-generated response
-- Do not invent numeric values unless they were captured in a real interview.
-- For synthetic interviews, leave numeric fields blank unless the number is explicitly grounded in the evidence chain.
+- For direct interviews, do not invent numeric values.
+- For synthetic interviews, numeric and rating fields may be filled as synthetic estimates when needed for downstream persona workflows, but must be explicitly labeled.
 - Preserve existing interview content when migrating to this instrument.
 - Keep context geography explicit: Italy (`SSN`, regional health systems, Italian/EU compliance context).
 
@@ -82,6 +82,7 @@ For each interview run, include:
 
 Answer recording rules:
 - Do not leave `answer` blank. Use explicit tokens like `not_captured` or `prefer_not_to_say`.
+- For `synthetic_interview` responses, numeric/rating answers may use a synthetic estimate. Record `answer_basis: synthetic_estimate` next to the answer and keep `source_refs` pointing to the synthetic interview `SOURCE-*`.
 
 ## Versioning
 
