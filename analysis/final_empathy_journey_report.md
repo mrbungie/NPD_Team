@@ -6,7 +6,7 @@ This is the final, human-readable story of the two-sided reality in Italy/SSN:
 
 Scope: Italy (SSN and regional context), with two distinct cohorts:
 1) `patient_unknown_symptom`
-2) `insurer` interpreted as payer/procurement/governance stakeholders in Italy/SSN.
+2) `insurer` (in Italy/SSN this maps to procurement/governance stakeholders, not US-style private payers).
 
 Sources used in this document:
 - Narrative synthesis: [`analysis/final_analysis_summary.md`](analysis/final_analysis_summary.md)
@@ -74,10 +74,10 @@ Sources: [`analysis/final_analysis_summary.md`](analysis/final_analysis_summary.
 
 ---
 
-## 4) Empathy Map B - Payer / Procurement Stakeholder (Italy/SSN)
+## 4) Empathy Map B - Insurer (Italy/SSN)
 
 ### Segment
-Regional/ASL/hospital procurement and governance actors evaluating digital health adoption under SSN constraints.
+People who function as the "insurer" side of the market in Italy/SSN: Regional/ASL/hospital procurement and governance actors evaluating digital health adoption under SSN constraints.
 
 Interview snapshot (synthetic, n=8):
 - Counts and distributions: [`analysis/interview_quant/stakeholder_counts.csv`](analysis/interview_quant/stakeholder_counts.csv)
@@ -115,7 +115,7 @@ Sources: [`analysis/final_analysis_summary.md`](analysis/final_analysis_summary.
 
 ---
 
-## 6) Customer Journey Map B - Procurement / Adoption (Italy/SSN)
+## 6) Customer Journey Map B - Insurer Adoption Journey (Italy/SSN)
 
 | Stage | Need identification | Appraisal framing | Compliance/governance | Integration feasibility | Pilot decision | Scale-out decision |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |

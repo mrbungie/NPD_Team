@@ -46,9 +46,9 @@ Do
 Product implication
 - The core deliverable is not "more information". It is a clinician-usable plan artifact that lowers emotional and administrative load.
 
-## Customer Journey Map B: Payer / Procurement Stakeholder (Italy/SSN)
+## Customer Journey Map B: Insurer (Italy/SSN)
 
-This corresponds to the repo cohort `insurer` but in Italy scope it is procurement/governance stakeholders (Regions/ASL, hospitals, national constraints), not US-style private payers.
+This corresponds to the repo cohort `insurer`. In Italy/SSN scope this is expressed as procurement/governance stakeholders (Regions/ASL, hospitals, national constraints), not US-style private payers.
 
 | Gate / Phase | What they do | What kills the deal | What they need from a vendor/product | Evidence anchors |
 | :--- | :--- | :--- | :--- | :--- |
@@ -63,7 +63,7 @@ Numeric overlays (Italy, context signals):
 - Financing mix (latest 2024): 74.25% public/compulsory, 3.44% voluntary, 22.31% out-of-pocket. (See `analysis/r_pipeline/report_summary.md` Q5)
 - Data readiness surfaces exist (EHIS/SHA + Orphadata metadata), but this is not yet Region-level operational data. (See Q6)
 
-## Empathy Map B: Procurement/Governance Stakeholder (Italy/SSN)
+## Empathy Map B: Insurer (Italy/SSN)
 
 Think
 - "If governance is unclear, it is dead on arrival."
