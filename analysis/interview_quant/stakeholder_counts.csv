@@ -1,0 +1,41 @@
+cohort,n_respondents,question_id,question_label,option,count,share_of_respondents
+insurer,8,INS-Q01,Primary evaluation criterion,operational_feasibility,4,0.5
+insurer,8,INS-Q01,Primary evaluation criterion,clinical_outcomes,2,0.25
+insurer,8,INS-Q01,Primary evaluation criterion,both_clinical_and_economic,1,0.125
+insurer,8,INS-Q01,Primary evaluation criterion,compliance_risk,1,0.125
+insurer,8,INS-Q04,Evidence types trusted,pilot_results,8,1.0
+insurer,8,INS-Q04,Evidence types trusted,peer_reviewed,4,0.5
+insurer,8,INS-Q04,Evidence types trusted,real_world_evidence,3,0.375
+insurer,8,INS-Q04,Evidence types trusted,health_economic_model,1,0.125
+insurer,8,INS-Q07,Internal stakeholders involved,it_security,7,0.875
+insurer,8,INS-Q07,Internal stakeholders involved,privacy_legal,6,0.75
+insurer,8,INS-Q07,Internal stakeholders involved,procurement,5,0.625
+insurer,8,INS-Q07,Internal stakeholders involved,leadership,4,0.5
+insurer,8,INS-Q07,Internal stakeholders involved,clinical_governance,3,0.375
+insurer,8,INS-Q07,Internal stakeholders involved,it_data_platform,3,0.375
+insurer,8,INS-Q07,Internal stakeholders involved,operations,3,0.375
+insurer,8,INS-Q07,Internal stakeholders involved,finance,2,0.25
+insurer,8,INS-Q10,Top adoption-blocking risks,compliance_risk,7,0.875
+insurer,8,INS-Q10,Top adoption-blocking risks,workflow_disruption,5,0.625
+insurer,8,INS-Q10,Top adoption-blocking risks,vendor_lock_in,3,0.375
+insurer,8,INS-Q10,Top adoption-blocking risks,data_quality,2,0.25
+insurer,8,INS-Q10,Top adoption-blocking risks,training_burden,2,0.25
+insurer,8,INS-Q10,Top adoption-blocking risks,procurement_timing,1,0.125
+insurer,8,INS-Q14,Preferred contracting model,fixed_fee,7,0.875
+insurer,8,INS-Q14,Preferred contracting model,mixed,1,0.125
+insurer,8,INS-Q18,Core jobs to be done,reduce_risk_and_ensure_compliance,5,0.625
+insurer,8,INS-Q18,Core jobs to be done,improve_measurement_and_monitoring,4,0.5
+insurer,8,INS-Q18,Core jobs to be done,enable_interoperability_and_scaling,4,0.5
+insurer,8,INS-Q18,Core jobs to be done,support_policy_or_procurement_decision,3,0.375
+insurer,8,INS-Q18,Core jobs to be done,reduce_operational_burden,2,0.25
+insurer,8,INS-Q18,Core jobs to be done,improve_access_or_continuity,1,0.125
+insurer,8,INS-Q19,Procurement/adoption stages,pilot,6,0.75
+insurer,8,INS-Q19,Procurement/adoption stages,monitoring_and_reporting,6,0.75
+insurer,8,INS-Q19,Procurement/adoption stages,integration_and_interoperability,4,0.5
+insurer,8,INS-Q19,Procurement/adoption stages,hta_appraisal,3,0.375
+insurer,8,INS-Q19,Procurement/adoption stages,privacy_and_legal,3,0.375
+insurer,8,INS-Q19,Procurement/adoption stages,security_and_it,3,0.375
+insurer,8,INS-Q19,Procurement/adoption stages,need_identification,2,0.25
+insurer,8,INS-Q19,Procurement/adoption stages,tender_or_procurement,2,0.25
+insurer,8,INS-Q19,Procurement/adoption stages,scale_out,2,0.25
+insurer,8,INS-Q19,Procurement/adoption stages,prioritization,1,0.125

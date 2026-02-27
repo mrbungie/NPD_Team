@@ -1,0 +1,52 @@
+cohort,n_respondents,question_id,question_label,option,count,share_of_respondents
+patient_unknown_symptom,8,PUS-Q01,First 48h actions,search_engine,7,0.875
+patient_unknown_symptom,8,PUS-Q01,First 48h actions,symptom_checker,5,0.625
+patient_unknown_symptom,8,PUS-Q01,First 48h actions,online_community,3,0.375
+patient_unknown_symptom,8,PUS-Q01,First 48h actions,friends_family,2,0.25
+patient_unknown_symptom,8,PUS-Q01,First 48h actions,primary_care_mmg,2,0.25
+patient_unknown_symptom,8,PUS-Q01,First 48h actions,mmg_primary_care,1,0.125
+patient_unknown_symptom,8,PUS-Q01,First 48h actions,specialist,1,0.125
+patient_unknown_symptom,8,PUS-Q04,Accessed care in last 6 months,mmg_primary_care,8,1.0
+patient_unknown_symptom,8,PUS-Q04,Accessed care in last 6 months,diagnostic_tests,6,0.75
+patient_unknown_symptom,8,PUS-Q04,Accessed care in last 6 months,specialist_visit_ssn,6,0.75
+patient_unknown_symptom,8,PUS-Q04,Accessed care in last 6 months,teleconsult,1,0.125
+patient_unknown_symptom,8,PUS-Q05,Top barriers,access_delay,6,0.75
+patient_unknown_symptom,8,PUS-Q05,Top barriers,repeat_story,4,0.5
+patient_unknown_symptom,8,PUS-Q05,Top barriers,bureaucracy_admin,4,0.5
+patient_unknown_symptom,8,PUS-Q05,Top barriers,not_being_believed,4,0.5
+patient_unknown_symptom,8,PUS-Q05,Top barriers,unclear_next_step,3,0.375
+patient_unknown_symptom,8,PUS-Q05,Top barriers,conflicting_opinions,2,0.25
+patient_unknown_symptom,8,PUS-Q05,Top barriers,cost,1,0.125
+patient_unknown_symptom,8,PUS-Q08,Most trusted info sources,specialist,7,0.875
+patient_unknown_symptom,8,PUS-Q08,Most trusted info sources,mmg_primary_care,6,0.75
+patient_unknown_symptom,8,PUS-Q08,Most trusted info sources,official_health_sites,4,0.5
+patient_unknown_symptom,8,PUS-Q08,Most trusted info sources,online_community,2,0.25
+patient_unknown_symptom,8,PUS-Q08,Most trusted info sources,patient_associations,1,0.125
+patient_unknown_symptom,8,PUS-Q12,Top outcomes,faster_access_to_right_care,5,0.625
+patient_unknown_symptom,8,PUS-Q12,Top outcomes,fewer_repeat_explanations,5,0.625
+patient_unknown_symptom,8,PUS-Q12,Top outcomes,reassurance_and_clarity,5,0.625
+patient_unknown_symptom,8,PUS-Q12,Top outcomes,legitimacy_support,4,0.5
+patient_unknown_symptom,8,PUS-Q12,Top outcomes,better_test_interpretation,3,0.375
+patient_unknown_symptom,8,PUS-Q12,Top outcomes,manage_anxiety,2,0.25
+patient_unknown_symptom,8,PUS-Q13,Unacceptable tool reasons,too_generic,5,0.625
+patient_unknown_symptom,8,PUS-Q13,Unacceptable tool reasons,too_alarmist,4,0.5
+patient_unknown_symptom,8,PUS-Q13,Unacceptable tool reasons,adds_more_steps,4,0.5
+patient_unknown_symptom,8,PUS-Q13,Unacceptable tool reasons,asks_too_much_time,3,0.375
+patient_unknown_symptom,8,PUS-Q13,Unacceptable tool reasons,privacy_concerns,2,0.25
+patient_unknown_symptom,8,PUS-Q17,Jobs to be done,get_taken_seriously,5,0.625
+patient_unknown_symptom,8,PUS-Q17,Jobs to be done,interpret_tests,5,0.625
+patient_unknown_symptom,8,PUS-Q17,Jobs to be done,manage_anxiety,4,0.5
+patient_unknown_symptom,8,PUS-Q17,Jobs to be done,decide_if_urgent,3,0.375
+patient_unknown_symptom,8,PUS-Q17,Jobs to be done,reduce_repeat_story,3,0.375
+patient_unknown_symptom,8,PUS-Q17,Jobs to be done,get_to_right_specialist,2,0.25
+patient_unknown_symptom,8,PUS-Q17,Jobs to be done,coordinate_appointments,2,0.25
+patient_unknown_symptom,8,PUS-Q18,Journey stages,mmg_visit,8,1.0
+patient_unknown_symptom,8,PUS-Q18,Journey stages,symptom_onset,6,0.75
+patient_unknown_symptom,8,PUS-Q18,Journey stages,online_search,6,0.75
+patient_unknown_symptom,8,PUS-Q18,Journey stages,diagnostics,6,0.75
+patient_unknown_symptom,8,PUS-Q18,Journey stages,admin_and_booking,6,0.75
+patient_unknown_symptom,8,PUS-Q18,Journey stages,self_triage,5,0.625
+patient_unknown_symptom,8,PUS-Q18,Journey stages,specialist_visit,5,0.625
+patient_unknown_symptom,8,PUS-Q18,Journey stages,follow_up,4,0.5
+patient_unknown_symptom,8,PUS-Q18,Journey stages,community_sensemaking,2,0.25
+patient_unknown_symptom,8,PUS-Q18,Journey stages,work_family_impact,1,0.125
